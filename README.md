@@ -1,18 +1,9 @@
 Welcome to Linux!
 ========================
 
-> LT Grant Wyman
-> 
-> 2/c John Hammond
- 
----------------------------------------------------------
-
-__Welcome to the world of [Linux]!__
-
 <p align="center">
   <img src="https://github.com/macee/linux_16/blob/master/pictures/tux.png?raw=true" alt="Tux, the Linux Mascot"/>
 </p>
-
 
 __[Linux]__ is a computer [operating system], much like [Microsoft Windows], which you are probably already used to working with. _But,_ it is designed for creative people who want to get work done -- engineers, mathematicians, scientists, developers, artists and more.
 
@@ -26,7 +17,6 @@ In this class, we'll be teaching you how to get started with the [Linux][Linux] 
 
 Please go ahead and explore. We'll be diving into more and more of these files as the weeks go on, but the point is to let you be inquisitive and creative -- so take a sneak peak, if you'd like. ;)
 
-![The Raspberry Pi](pictures/raspberry.png)
 <p align="center">
   <img src="https://github.com/macee/linux_16/blob/master/pictures/raspberry.png?raw=true" alt="The Raspberry Pi Logo"/>
 </p>
