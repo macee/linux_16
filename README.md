@@ -35,7 +35,7 @@ Files & Directory Information
 
 * [`training_wheels/`](training_wheels/)
     
-    In this directory is the source code and material for the "training wheels" [`bash`] shell that was put together for this course, to create a more interactive learning experience. It was written in [Python] should continue to be maintained throughout the course.  
+    In this directory is the source code and material for the "training wheels" [`bash`][bash] shell that was put together for this course, to create a more interactive learning experience. It was written in [Python] should continue to be maintained throughout the course.  
 
 [MicroSD]: https://en.wikipedia.org/wiki/MicroSD
 [Raspbian]: https://www.raspberrypi.org/downloads/raspbian/
