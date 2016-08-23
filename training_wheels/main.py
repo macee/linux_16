@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: john
 # @Date:   2016-08-13 23:48:50
-# @Last Modified by:   john
-# @Last Modified time: 2016-08-19 14:23:26
+# @Last Modified by:   John Hammond
+# @Last Modified time: 2016-08-23 01:23:02
 
 import readline
 import sys
@@ -14,7 +14,6 @@ import colorama
 import subprocess
 import textwrap
 import threading
-
 from colors import *
 
 wrong_command_tally = 0
@@ -25,7 +24,9 @@ current_module = None
 
 entered = ""
 
-time_on = False
+using_time = True
+time_on = True
+
 
 class Module(object):
 	'''
@@ -44,7 +45,7 @@ class Module(object):
 
 	def learn_something( self, name, message, command_waiting, incorrect, on_correct = None ):
 
-		global entered, something_to_say_inbetween
+		global entered, something_to_say_inbetween, time_on, using_time
 
 		if ( name not in self.understands ):
 			self.understands[name] = False
@@ -80,6 +81,15 @@ class Module(object):
 									if ( on_correct ):
 										on_correct()
 									self.understands[name] = True
+									time_on = True
+									self.seen_entries.append(command_waiting)
+
+							else:
+								if entered == command_waiting:
+									if ( on_correct ):
+										on_correct()
+									self.understands[name] = True
+									time_on = True
 									self.seen_entries.append(command_waiting)
 
 					else:
@@ -90,6 +100,7 @@ class Module(object):
 							if ( on_correct ):
 								on_correct()
 							self.understands[name] = True
+							time_on = True
 
 
 					process()
@@ -262,7 +273,7 @@ Give the `yes` command an argument and see what happens.
 
 							message = ''' 
 
-Nice, see how the `yes` command printed out your argument over and over again,
+Awesome! See how the `yes` command printed out your argument over and over again,
 rather than just the letter `y`? When you pass arguments to a program, you
 change how the program behaves when it executes.
 
@@ -280,11 +291,10 @@ just yet.
 Enter just the `man` command.
 ''' )
 
-
 		self.learn_something( "What is a man page?", 
 
 							message = ''' 
-See how it asked you about a "manual page"? That is exactly what you think it
+Notice how it asked you about a "manual page"? That is exactly what you think it
 is. The `man` command will show you a manual regarding any certain command, so
 you can learn more about what that command does, or how you can use it.
 
@@ -300,13 +310,82 @@ What do you think you would enter to see the manual for the `yes` command?
 		self.learn_something( "Man page for `yes`", 
 
 							message = ''' 
+Woo! It zoomed by. If you need to, you can scroll with the mouse to look back
+on all the output. Or, you can use Shift + PageUp and Shift + PageDown with 
+the keyboard.
 
+See how the "man page" tells you about the program, and what it does? It even
+shows you other kinds of special arguments you can give it to have the program
+operate in a different way. Try passing that `--version` argument to `yes`.
+		
+		''',
+
+							 command_waiting = "yes --version",
+							 incorrect = '''
+You should get the `--version` of the `yes` command!
+''' )
+
+		self.learn_something( "`yes` version and arguments", 
+
+							message = ''' 
+Now, when you passed in that `--version` argument to the `yes` command, it
+didn't repeatedly print anything out on the screen like usual! It just told you about
+the program and that's all it did. So, to drive the point home one last time,
+arguments change the way a command will operate.
+
+And keep in mind, the "man page" of any command will tell you all about it,
+what it does, what arguments it takes, etc..
+
+Let's move on from this, though. Try the `cd` command.
+		''',
+
+							 command_waiting = "cd",
+							 incorrect = '''
+Try the `cd` command.
+
+''' )
+
+		self.learn_something( "The `cd` command.", 
+
+							message = ''' 
+Well, it seems like nothing really happened, since it didn't print anything
+out on stdout or stderr, but... something really did happen!
+
+In a second, take a look at your prompt. That blue text, with the squiggly tilde "~"?
+
+That blue text denotes your current location in the Linux filesystem. 
+The tilde "~" actually is a special character that means your "home directory".
+
+When you entered the `cd` command, that actually means "change directory".
+It's how you move around the filesystem when working inside the shell!
+
+If you don't supply an argument, `cd` will by default change your directory
+to your "home directory". Run the `pwd` command to see what that is.
 
 		''',
 
-							 command_waiting = "man man",
+							 command_waiting = "pwd",
 							 incorrect = '''
-What do you think you would enter to see the manual for the `yes` command?
+Run `pwd` to see where you currently are in your file system.
+''' )
+
+		self.learn_something( "The `pwd` command.", 
+
+							message = ''' 
+Sweet, you got it. `pwd` stands for "print working directory"... so it will
+print and display the current directory you are working in, which should right
+now be your home directory!
+
+Your home directory is typically always `/home/<YOUR_USERNAME>`. And remember
+that special character, the tilde "~", means your home directory. 
+
+Try to `cd` to your home directory using that tilde.
+
+		''',
+
+							 command_waiting = "cd ~",
+							 incorrect = '''
+Run `cd ~` to see what happens.
 ''' )
 	
 	
@@ -332,11 +411,12 @@ def say(message):
 	for character in message:
 		sys.stdout.write(character)
 		sys.stdout.flush()
-		if time_on:
-			if character in punction_stops:
-				time.sleep(0.2)
-			else:
-				time.sleep(0.03)
+		if using_time:
+			if time_on:
+				if character in punction_stops:
+					time.sleep(0.12)
+				else:
+					time.sleep(0.03)
 
 
 def test_special_cases( ):
@@ -347,6 +427,10 @@ def test_special_cases( ):
 	
 	if ( args[0] == "cd" and len(args) == 1 ):
 		os.chdir( os.environ['HOME'] )
+		return True
+		# This command succeeded
+	if ( args[0] == "cd" and len(args) == 2 ):
+		os.chdir( args[1] )
 
 	if ( ( args[0] == "exit" or args[0] == "quit" ) and len(args) == 1 ):
 		say_goodbye()
@@ -381,7 +465,8 @@ def process():
 	if entered == "":
 		return
 
-	test_special_cases()
+	if ( test_special_cases() ):
+		return
 
 	try:
 
@@ -401,7 +486,9 @@ def process():
 
 def prompt():
 
-	global entered
+	global entered, time_on, using_time
+	if ( using_time and time_on ):
+		time_on = False
 
 	ps1 = "".join([	colorama.Fore.GREEN, colorama.Style.BRIGHT, 
 					os.environ['USER'], '@', socket.gethostname(), 
@@ -409,14 +496,14 @@ def prompt():
 					colorama.Fore.RESET, colorama.Style.NORMAL
 				  ]).replace( os.environ["HOME"], "~" )
 
-	entered = raw_input(  ps1 )
+	entered = raw_input(  ps1 ).strip()
 	readline.add_history( entered )
 	current_module.seen_entries.append(entered)
 
 def run():
 
 
-	global current_module
+	global current_module, using_time, time_on
 
 	if ( current_module == None ):
 		print R("No module loaded... nothing to do!")
@@ -425,11 +512,9 @@ def run():
 
 		try:
 			current_module.go()
-			# prompt()
-			# process()
 
 		except KeyboardInterrupt:
-			
+			# time_on = False
 			sys.stdout.write("^C\n")
 			continue
 
@@ -439,7 +524,6 @@ def run():
 def print_banner():
 	global columns
 	get_size()
-
 
 	os.system("clear")
 	print B("-" * columns )
