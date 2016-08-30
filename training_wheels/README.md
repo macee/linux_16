@@ -18,18 +18,35 @@ __If this tool does turn out to be a success, I will add more content and "modul
 Files & Directory Information
 --------
 
+* [`training_wheels`](training_wheels)
+    
+    This is the main file of the __Training Wheels__ application. It is the most top-level [Python] script that creates and invokes all the other objects that allows the utility to run smoothly -- __this is the executable the user should run when they intend on using the program.__ It is to be excecuted by:
 
-* [`colors.py`](colors.py)
-    
-    This file and the `.pyc` file act as a quick module to import and use within [Python] to access quick-and-easy shorthand functions to utilize colors.
+    ```
+    ./training_wheels
+    ```
 
-* [`main.py`](main.py)
+* [`shell/`](shell/)
     
-    This is the main source code of the "training wheels" shell. This is the file you should invoke when you want to run the program. It can be invoked with a simple "dot-slash" syntax, like so:
+    This folder contains the "main loop" of the __Training Wheels__ tool and simulates the "shell," as is the point of the whole application. It handles the commands specific to the __Training Wheels__ shell and acts as the master object for all the code and objects given in the modules noted below.
+
+* [`lessons/`](lessons/)
     
-```
-./main.py
-```
+    This directory holds the backend [Python] source code to manage the "lessons" in the __Training Wheels__ shell, and contains the [`hjson`][hjson] and [JSON] files for the lessons themselves. It does act as a [Python] package and is necessary for __Training Wheels__ to run.
+
+* [`save_engine/`](save_engine/)
+    
+    This folder contains the code to manage the saving and loading of the user's progress throughout their time with __Training Wheels__. It does act as a [Python] package and is necessary for __Training Wheels__ to run.
+
+* [`colors/`](colors/)
+    
+    This folder acts as a [Python] package that offers the use of the [`colorama`][colorama] module with some convenient and easy-to-access shorthand functions. 
+
+* [`_developer_`](_developer_)
+    
+    This directory holds code that is meant to be utilized by someone who plans on developing content for the __Training Wheels__ shell -- it includes some [`bash`][bash] scripts to install dependencies to build lesson files like [`nodejs`][nodejs], [`npm`][npm],  and [`hjson`][hjson]. 
+
+
 
 [MicroSD]: https://en.wikipedia.org/wiki/MicroSD
 [Raspbian]: https://www.raspberrypi.org/downloads/raspbian/
@@ -45,3 +62,8 @@ Files & Directory Information
 [Raspberry Pi]: https://www.raspberrypi.org/
 [open-source]: https://en.wikipedia.org/wiki/Open-source_software
 [Python]: https://www.python.org/
+[colorama]: https://pypi.python.org/pypi/colorama
+[nodejs]: https://nodejs.org/en/
+[hjson]: https://hjson.org/
+[npm]: https://www.npmjs.com/
+[JSON]: http://www.json.org/
