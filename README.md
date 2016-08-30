@@ -21,6 +21,20 @@ Please go ahead and explore. We'll be diving into more and more of these files a
   <img src="https://github.com/macee/linux_16/blob/master/pictures/raspberry.png?raw=true" alt="The Raspberry Pi Logo"/>
 </p>
 
+-----------------
+
+Adding Material to github
+------
+
+To add files and material to [github], the commands follow the sequence of __add__, __commit__, and __push__.
+
+Note that `git add .` will add the whole current directory. So if you are in the folder of your repo, it will collect all of the changes.
+
+```
+git add .
+git commit
+git push
+```
 
 ---------------
 
@@ -51,3 +65,4 @@ Files & Directory Information
 [Raspberry Pi]: https://www.raspberrypi.org/
 [open-source]: https://en.wikipedia.org/wiki/Open-source_software
 [Python]: https://www.python.org/
+[github]: https://github.com
