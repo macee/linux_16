@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-08-29 22:42:16
+# @Last Modified time: 2016-09-07 22:25:02
 
 import json
 from colors.colors import *
@@ -19,8 +19,7 @@ class LessonBookClass(object):
 		self.parent = parent
 
 		self.punction_stops = "\n.,!?-"
-		self.using_time = True
-		self.time_on = True
+
 
 
 		self.lesson_pointer = 0
@@ -46,8 +45,8 @@ class LessonBookClass(object):
 		for character in message:
 			sys.stdout.write(character)
 			sys.stdout.flush()
-			if self.using_time:
-				if self.time_on:
+			if self.parent.using_time:
+				if self.parent.time_on:
 					if character in self.punction_stops:
 						time.sleep(0.08)
 					else:
@@ -103,6 +102,7 @@ Enter the number '0' to go back to what you were doing.\n''')
 
 				print B("_"*79 + "\n")
 				self.load_lesson( self.available_lessons[self.selected_lesson_number] )
+				
 				return
 			else:
 				print R("That does not look like a valid input. Please try again.")
@@ -120,6 +120,7 @@ Enter the number '0' to go back to what you were doing.\n''')
 		if ( next_lesson_number >= len( self.available_lessons ) ):
 			print( Y("Actually -- there are no more lessons!") )
 			print( Y("You're all done for now... go practice Linux!") )
+			self.parent.SaveEngine.save( "done" )
 			exit()
 		else:
 
@@ -140,8 +141,8 @@ Enter the number '0' to go back to what you were doing.\n''')
 			raise "This file does not exist!"
 		
 		self.current_lesson = json.loads( self.file_handle.read() )
+		self.selected_lesson_number = int(self.current_lesson['name'].split(".")[0]) - 1
 		self.lesson_is_loaded = True
-
 
 	def select_concept( self ):
 		if ( self.current_lesson == {} ):

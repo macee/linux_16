@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:29:22
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-08-28 23:19:34
+# @Last Modified time: 2016-09-07 22:19:23
 
 import json
 import base64
@@ -41,6 +41,7 @@ class SaveEngineClass():
 
 			
 		if self.loaded_data != {}:
+
 			print M('''
 It looks like you've used this tool before! I'll bring you right back to where 
 you left off. If you'd like to revisit older lesson or concepts, enter `@help`!''')

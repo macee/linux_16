@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-08-29 13:21:24
+# @Last Modified time: 2016-09-07 22:28:39
 
 import os
 import textwrap
@@ -24,9 +24,8 @@ class TrainingWheelsShellClass():
 		self.SaveEngine = SaveEngineClass( parent = self )
 		self.LessonBook = LessonBookClass( parent = self )
 
-
-		self.using_time = False
-		self.time_on = False
+		self.using_time = True
+		self.time_on = True
 
 		self.entered_input = ""
 
@@ -63,9 +62,8 @@ class TrainingWheelsShellClass():
 
 	def prompt( self ):
 
-		if ( self.LessonBook.using_time and self.LessonBook.time_on ):
-			self.LessonBook.time_on = False
-
+		if ( self.using_time and self.time_on ):
+			self.time_on = False
 
 		ps1 = "".join([	colorama.Fore.GREEN, colorama.Style.BRIGHT, 
 						os.environ['USER'], '@', socket.gethostname(), 
@@ -74,8 +72,6 @@ class TrainingWheelsShellClass():
 						colorama.Style.NORMAL, colorama.Fore.RESET,
 					  ]).replace( os.environ["HOME"], "~" )
 		
-
-
 		self.entered_input = raw_input(  ps1 ).strip()
 		readline.add_history( self.entered_input )
 
@@ -98,7 +94,8 @@ class TrainingWheelsShellClass():
 		if self.entered_input in self.commands.iterkeys():
 			# Run the corresponding function that follows the 
 			self.commands[self.entered_input]()
-			return 
+			raise KeyboardInterrupt
+			# return 
 		
 
 
