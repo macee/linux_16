@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-07 22:25:02
+# @Last Modified time: 2016-09-07 23:12:44
 
 import json
 from colors.colors import *
@@ -29,7 +29,7 @@ class LessonBookClass(object):
 
 		self.current_lesson = {}
 
-		self.available_lessons = glob.glob('lessons/.*.json')
+		self.available_lessons = sorted(glob.glob('lessons/.*.json'))
 		self.cleaned_available_lessons = [ 	
 
 			l.split('/')[1][1:].replace('.json','').\
@@ -232,6 +232,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 			
 			# Prompt for this concept.
+			time.sleep(1)
 			self.say(C( message ))
 
 

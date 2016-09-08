@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-07 22:28:39
+# @Last Modified time: 2016-09-07 23:33:51
 
 import os
 import textwrap
@@ -36,8 +36,24 @@ class TrainingWheelsShellClass():
 		}
 
 		self.special_cases = {
-			"quit": self.say_goodbye,	}
+			"quit": self.say_goodbye,
+			"cd": self.change_directory,	
+		}
 
+
+	def change_directory( self ):
+
+		to_directory = " ".join( self.entered_input.split(" ")[1:] )
+		
+		if ( to_directory == '' ):
+			os.chdir(os.environ['HOME'])
+		elif ( to_directory == '~' ):
+			os.chdir(os.environ['HOME'])
+		else:
+			try:
+				os.chdir(to_directory)
+			except OSError:
+				print "bash: cd: " + to_directory + ": No such file or directory"
 
 	def do_help( self ):
 
@@ -82,14 +98,14 @@ class TrainingWheelsShellClass():
 		exit()
 
 
-
 	def process( self ):
 
-		
 		if self.entered_input == "": return
-		if self.entered_input in self.special_cases.iterkeys():
+
+		command = self.entered_input.split(" ")[0]
+		if command in self.special_cases.iterkeys():
 			# Run the corresponding function that follows the 
-			self.special_cases[self.entered_input]()
+			self.special_cases[command]()
 			return True
 		if self.entered_input in self.commands.iterkeys():
 			# Run the corresponding function that follows the 
@@ -120,7 +136,6 @@ class TrainingWheelsShellClass():
 
 	def run( self ):
 		''' The main loop of the program is here, creating the shell...'''
-
 
 		if (not self.SaveEngine.load() ):
 
