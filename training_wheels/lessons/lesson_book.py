@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-12 23:24:54
+# @Last Modified time: 2016-09-13 02:02:00
 
 import json
 from colors.colors import *
@@ -11,6 +11,7 @@ import sys
 import textwrap
 import time
 import curses
+import os
 
 class LessonBookClass(object):
 
@@ -20,7 +21,8 @@ class LessonBookClass(object):
 
 		self.punction_stops = "\n.,!?-"
 
-
+		path = os.path.dirname(os.path.realpath(__file__))
+		# print path
 
 		self.lesson_pointer = 0
 		self.new_lesson_pointer = 0
@@ -29,10 +31,12 @@ class LessonBookClass(object):
 
 		self.current_lesson = {}
 
-		self.available_lessons = sorted(glob.glob('lessons/.*.json'))
+		self.available_lessons = [file for file in 
+					sorted(glob.glob(os.path.join(path, '.*.json')))]
+
 		self.cleaned_available_lessons = [ 	
 
-			l.split('/')[1][1:].replace('.json','').\
+			l.split('/')[-1][1:].replace('.json','').\
 							replace('lesson_','').\
 							replace('_',' ')
 
@@ -138,7 +142,7 @@ Enter the number '0' to go back to what you were doing.\n''')
 			self.file_handle = open(lesson_identifier, 'r')
 		except IOError:
 			# The file does not exist.
-			raise "This file does not exist!"
+			raise Exception("This file does not exist!")
 		
 		self.current_lesson = json.loads( self.file_handle.read() )
 		self.selected_lesson_number = int(self.current_lesson['name'].split(".")[0]) - 1

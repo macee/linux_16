@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-12 23:24:41
+# @Last Modified time: 2016-09-13 01:55:43
 
 import os
 import textwrap
@@ -24,7 +24,7 @@ class TrainingWheelsShellClass():
 		self.SaveEngine = SaveEngineClass( parent = self )
 		self.LessonBook = LessonBookClass( parent = self )
 
-		self.using_time = True
+		self.using_time = False
 		self.time_on = True
 
 		self.entered_input = ""
