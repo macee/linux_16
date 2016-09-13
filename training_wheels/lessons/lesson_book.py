@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-07 23:12:44
+# @Last Modified time: 2016-09-12 23:24:54
 
 import json
 from colors.colors import *
@@ -229,7 +229,6 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 
 		while ( self.new_lesson_pointer == self.lesson_pointer ):
-
 			
 			# Prompt for this concept.
 			time.sleep(1)
@@ -264,7 +263,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 						correct = False
 				if correct:
 					self.new_lesson_pointer += 1
-					self.time_on = True
+					self.parent.time_on = True
 					
 				self.parent.process()
 

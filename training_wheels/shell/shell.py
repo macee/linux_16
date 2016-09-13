@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-07 23:33:51
+# @Last Modified time: 2016-09-12 23:24:41
 
 import os
 import textwrap
@@ -142,7 +142,6 @@ class TrainingWheelsShellClass():
 			self.LessonBook.select_lesson()
 			self.LessonBook.select_concept()
 
-
 		while ( True ):
 
 			try:
@@ -150,7 +149,7 @@ class TrainingWheelsShellClass():
 				self.LessonBook.go()
 
 			except KeyboardInterrupt:
-
+				self.time_on = False
 				sys.stdout.write("^C\n")
 				continue
 
