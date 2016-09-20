@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-13 02:02:00
+# @Last Modified time: 2016-09-19 21:57:09
 
 import json
 from colors.colors import *
@@ -131,10 +131,10 @@ Enter the number '0' to go back to what you were doing.\n''')
 			next_lesson_name = self.cleaned_available_lessons[next_lesson_number]
 			print "\t" + next_lesson_name + "\n\n"
 
-			self.load_lesson( self.available_lessons[next_lesson_number] )
 			self.lesson_pointer = 0
 			self.new_lesson_pointer = 0
 			self.selected_lesson_number += 1
+			self.load_lesson( self.available_lessons[next_lesson_number] )
 
 	def load_lesson( self, lesson_identifier ):
 
@@ -146,6 +146,7 @@ Enter the number '0' to go back to what you were doing.\n''')
 		
 		self.current_lesson = json.loads( self.file_handle.read() )
 		self.selected_lesson_number = int(self.current_lesson['name'].split(".")[0]) - 1
+		
 		self.lesson_is_loaded = True
 
 	def select_concept( self ):
