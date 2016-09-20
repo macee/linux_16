@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-13 02:04:00
+# @Last Modified time: 2016-09-20 01:14:08
 
 import os
 import textwrap
@@ -37,9 +37,14 @@ class TrainingWheelsShellClass():
 
 		self.special_cases = {
 			"quit": self.say_goodbye,
-			"cd": self.change_directory,	
+			"cd": self.change_directory,
+			"nano": self.protect_from_nano,
 		}
 
+
+	def protect_from_nano(self):
+		print R("Training Wheels cannot handle running nano!")
+		print R("The line buffering causes it to choke... sorry!")
 
 	def change_directory( self ):
 
@@ -117,9 +122,11 @@ class TrainingWheelsShellClass():
 
 		''' If they actually entered something, treat it as a command '''
 		try:
-			p = subprocess.Popen(	self.entered_input.split(), 
+			p = subprocess.Popen(	#self.entered_input.split(), 
+									self.entered_input, 
+									shell = True,
 									stdout = subprocess.PIPE, 
-									stdin=subprocess.PIPE
+									stdin=subprocess.PIPE,
 								)
 
 			while ( p ):

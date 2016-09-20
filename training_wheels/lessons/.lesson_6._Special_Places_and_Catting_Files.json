@@ -16,8 +16,8 @@
     {
       "tag": "Reminder: . and .. are special symbols, just like / and ~!",
       "message": "\n\rRemember that `ls -a` will show the . and .. special symbols, and all HIDDEN files\n\rin the current directory. It doesn't look like there are very many here.\n\r\n\rLet's use a relative path (that means no preceding / remember?) to get to the `dev` folder.\n\r",
-      "command_waiting": "cd tmp",
-      "incorrect": "You want to change into the /tmp directory, but just relative \n\rto where you are. So you don't need the root directiory's forward slash:\n\r`cd tmp`"
+      "command_waiting": "cd dev",
+      "incorrect": "You want to change into the /dev directory, but just relative \n\rto where you are. So you don't need the root directiory's forward slash:\n\r`cd dev`"
     },
     {
       "tag": "You should get into a habit of always checking out the files in a folder",
@@ -99,19 +99,19 @@
     },
     {
       "tag": "/tmp is world-readable and world-writeable",
-      "message": "\n\rRight now, there is no data in the file, because you are currently using Training \n\rWheels. It will keep track of your data once you quit the shell. That's why there\n\ris no output from cat -- there is currently really nothing in the file!\n\r\n\rIf you'd like to earn some brownie points, take a look at the file after you are done\n\rwith Training Wheels and tell me what kind of data it uses. :)\n\r\n\rAre there any hidden files in this directory? Please list ALL files.\n\r",
+      "message": "\n\rYou may or may not be able to see the saved data that Training Wheels stores.\n\rSometimes it is shown while running, sometimes not. Regardless, let's move on.\n\r\n\rAre there any hidden files in this directory? Please list ALL files.\n\r\n\r",
       "command_waiting": "ls -a",
       "incorrect": "If you don't remember how to list ALL files, check out the \n\rman page for the `ls` command."
     },
     {
       "tag": "/tmp is world-readable and world-writeable",
-      "message": "\n\rAn important thing to note is that the /tmp directory, being a TEMPORARY directory,\n\rhas no real owner. That means that ANYONE, any user on your Linux computer can\n\rread to or write to the /tmp folder. It's a guest room in your house. If you\n\rallow people into your home (let others log into your computer), anyone can stay in the guest house (read or write or do anything they want in the /tmp folder).\n\r\n\rWhen you're all done, `cd` to go home.\n\r",
+      "message": "\n\rAn important thing to note is that the /tmp directory, being a TEMPORARY directory,\n\rhas no real owner. That means that ANYONE, any user on your Linux computer can\n\rread to or write to the /tmp folder. It's a guest room in your house. If you\n\rallow people into your home (let others log into your computer), anyone can stay in the guest house (read or write or do anything they want in the /tmp folder).\n\r\n\rWhen you're all done, `cd` to go home.\n\r\n\r",
       "command_waiting": "cd",
       "incorrect": "When you are all done, enter `cd` to get back home."
     },
     {
-      "tag": "",
-      "message": "\n\rThis was meant to be a quick introductory look at some of the special places \n\rin the Linux filesystem, and just briefly letting you use cat to look at a file.\n\r\n\rThere are certainly other interesting and special places in the Linux filesystem \n\rand you will encounter them and learn about them as time goes on -- but now,\n\rjust try and remember those basics.\n\r\n\r/bin, /usr/bin -- binaries that you run from the command-line\n\r/dev           -- devices that you interact with to use your computer\n\r/etc           -- important system files, logs, and configuration files\n\r/tmp           -- the temp directory for temp files. world readable & writeable\n\r\n\rAnd don't forget, cat is how you can display the contents of a file, have it\n\rprinted onto standard output.\n\r"
+      "tag": "Summary of the Lesson",
+      "message": "\n\rThis was meant to be a quick introductory look at some of the special places \n\rin the Linux filesystem, and just briefly letting you use cat to look at a file.\n\r\n\rThere are certainly other interesting and special places in the Linux filesystem \n\rand you will encounter them and learn about them as time goes on -- but now,\n\rjust try and remember those basics.\n\r\n\r/bin, /usr/bin -- binaries that you run from the command-line\n\r/dev           -- devices that you interact with to use your computer\n\r/etc           -- important system files, logs, and configuration files\n\r/tmp           -- the temp directory for temp files. world readable & writeable\n\r\n\rAnd don't forget, cat is how you can display the contents of a file, have it\n\rprinted onto standard output.\n\r\n\r"
     }
   ]
 }

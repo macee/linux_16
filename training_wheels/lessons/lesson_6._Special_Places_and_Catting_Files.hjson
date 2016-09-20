@@ -56,11 +56,11 @@ Let's use a relative path (that means no preceding / remember?) to get to the `d
 
   ''',
 
-"command_waiting" : "cd tmp",
+"command_waiting" : "cd dev",
 
-"incorrect" : '''You want to change into the /tmp directory, but just relative 
+"incorrect" : '''You want to change into the /dev directory, but just relative 
 to where you are. So you don't need the root directiory's forward slash:
-  `cd tmp`'''
+  `cd dev`'''
 
   },
 
@@ -364,14 +364,11 @@ Try and cat it out right now.
 
 "message" : '''
 
-Right now, there is no data in the file, because you are currently using Training 
-Wheels. It will keep track of your data once you quit the shell. That's why there
-is no output from cat -- there is currently really nothing in the file!
-
-If you'd like to earn some brownie points, take a look at the file after you are done
-with Training Wheels and tell me what kind of data it uses. :)
+You may or may not be able to see the saved data that Training Wheels stores.
+Sometimes it is shown while running, sometimes not. Regardless, let's move on.
 
 Are there any hidden files in this directory? Please list ALL files.
+
 
   ''',
 
@@ -397,6 +394,7 @@ allow people into your home (let others log into your computer), anyone can stay
 
 When you're all done, `cd` to go home.
 
+
   ''',
 
   "command_waiting" : "cd",
@@ -413,7 +411,7 @@ When you're all done, `cd` to go home.
   
   {
     
-"tag" : "",
+"tag" : "Summary of the Lesson",
 
 "message" : '''
 
@@ -432,9 +430,9 @@ just try and remember those basics.
 And don't forget, cat is how you can display the contents of a file, have it
 printed onto standard output.
 
-  '''
 
-  
+  '''
+    
   }
 
   ]
