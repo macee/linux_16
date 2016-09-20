@@ -47,7 +47,7 @@ function make_i_lost_my_file(){
 
 	echo "$FUNCNAME: ${GREEN} creating flag for I lost my file... ${NC}"
 	
-	create_flag "USCGA{/tmp_is_where_temporary_files_and_folders_go}" "/etc/FINDME5.txt"
+	create_flag "USCGA{/etc_is_where_configs_and_user_passwords_are_stored}" "/etc/FINDME5.txt"
 }
 
 
