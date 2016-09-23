@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-20 01:14:08
+# @Last Modified time: 2016-09-23 17:47:18
 
 import os
 import textwrap
@@ -93,7 +93,9 @@ class TrainingWheelsShellClass():
 						colorama.Style.NORMAL, colorama.Fore.RESET,
 					  ]).replace( os.environ["HOME"], "~" )
 		
-		self.entered_input = raw_input(  ps1 ).strip()
+		sys.stdout.write(ps1)
+		self.entered_input = raw_input(   ).strip()
+		sys.stdin.flush()
 		readline.add_history( self.entered_input )
 
 	def say_goodbye( self ):
