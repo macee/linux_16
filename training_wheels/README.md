@@ -2,7 +2,7 @@ The "Training Wheels" Shell
 ========================
 
 <p align="center">
-  <img src="https://github.com/macee/linux_16/blob/master/pictures/bash.png?raw=true" alt="The bash shell"/>
+  <img src="https://github.com/macee/linux_16/blob/master/pictures/scavenger_hunt.png?raw=true" alt="The bash shell"/>
 </p>
 
 To help you become a bit more acquainted with the [Linux][Linux] [command-line], the [`bash`][bash] shell, a _prototype_ idea is to let you interact with a "training wheels" shell, which tries to kind of hold your hand and guide you through running commands and learning different concepts in [Linux].
@@ -18,17 +18,14 @@ __If this tool does turn out to be a success, I will add more content and "modul
 Files & Directory Information
 --------
 
-* [`training_wheels`](training_wheels)
+* [`static/`](static/)
     
-    This is the main file of the __Training Wheels__ application. It is the most top-level [Python] script that creates and invokes all the other objects that allows the utility to run smoothly -- __this is the executable the user should run when they intend on using the program.__ It is to be excecuted by:
+    This directory holds all of the static files used in the [Flask] web application, like the [CSS] stylesheet and [JavaScript] files. 
 
-    ```
-    ./training_wheels
-    ```
 
-* [`shell/`](shell/)
+* [`templates/`](templates/)
     
-    This folder contains the "main loop" of the __Training Wheels__ tool and simulates the "shell," as is the point of the whole application. It handles the commands specific to the __Training Wheels__ shell and acts as the master object for all the code and objects given in the modules noted below.
+    This folder contains all the [HTML] files used with [Flask]. They use the [Jinja2] template format, and all inherit from the `base_page.html` 
 
 * [`lessons/`](lessons/)
     
@@ -67,3 +64,7 @@ Files & Directory Information
 [hjson]: https://hjson.org/
 [npm]: https://www.npmjs.com/
 [JSON]: http://www.json.org/
+[CSS]: https://www.w3.org/Style/CSS/Overview.en.html
+[JavaScript]: https://www.javascript.com/
+[HTML]: https://en.wikipedia.org/wiki/HTML
+[Jinja]: http://jinja.pocoo.org/

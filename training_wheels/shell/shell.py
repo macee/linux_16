@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-23 17:47:18
+# @Last Modified time: 2016-09-25 17:47:11
 
 import os
 import textwrap
@@ -50,10 +50,12 @@ class TrainingWheelsShellClass():
 
 		to_directory = " ".join( self.entered_input.split(" ")[1:] )
 		
+		to_directory = to_directory.replace("~", os.environ['HOME'] )
+
 		if ( to_directory == '' ):
 			os.chdir(os.environ['HOME'])
-		elif ( to_directory == '~' ):
-			os.chdir(os.environ['HOME'])
+		# elif ( to_directory == '~' ):
+		# 	os.chdir(os.environ['HOME'])
 		else:
 			try:
 				os.chdir(to_directory)
@@ -86,11 +88,18 @@ class TrainingWheelsShellClass():
 		if ( self.using_time and self.time_on ):
 			self.time_on = False
 
-		ps1 = "".join([	colorama.Fore.GREEN, colorama.Style.BRIGHT, 
+		ps1 = "".join([	
+
+						colorama.Fore.MAGENTA, colorama.Style.BRIGHT, 
+						"TRAINING WHEELS SHELL: ",
+						colorama.Fore.GREEN, colorama.Style.BRIGHT, 
 						os.environ['USER'], '@', socket.gethostname(), 
 						colorama.Fore.BLUE,
 						" ", os.getcwd(), " $ ", 
+						colorama.Fore.MAGENTA, colorama.Style.BRIGHT, 
+						". . .",
 						colorama.Style.NORMAL, colorama.Fore.RESET,
+						"\n"
 					  ]).replace( os.environ["HOME"], "~" )
 		
 		sys.stdout.write(ps1)

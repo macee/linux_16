@@ -27,7 +27,7 @@
     },
     {
       "tag": "cd into that directory",
-      "message": "\n\rcd into that new directory, please.\n\r",
+      "message": "\n\rcd into that new directory, please.\n\r\n\r",
       "command_waiting": "cd workspace",
       "incorrect": "cd into your new workspace. Relative path, please!"
     },
@@ -93,7 +93,7 @@
     },
     {
       "tag": "You can always verify your changes when you work with the file system",
-      "message": "\n\rNow let's get back to that directory to see that it is really there.\n\rChange directory to the parent directory!\n\r",
+      "message": "\n\rNow let's get back to that directory to see that it is really there.\n\rChange directory to the parent directory!\n\r\n\r",
       "command_waiting": "cd ..",
       "incorrect": "`cd` to the parent directory (you just used the symbol!)"
     },
@@ -105,7 +105,7 @@
     },
     {
       "tag": "You can remove directories with the `rmdir` command.",
-      "message": "\n\rNice. Hopefully you see your file, `myfile.TXT`. \n\r\n\rLet's try and clean up. From here, you should also be able to see your\n\r`workspace` directory. We can remove that folder with the `rmdir` command.\n\r\n\rTry and experiment with it!\n\r",
+      "message": "\n\rNice. Hopefully you see your file, `myfile.TXT`. \n\r\n\rLet's try and clean up. From here, you should also be able to see your\n\r`workspace` directory. We can remove that folder with the `rmdir` command.\n\r\n\rTry it!\n\r\n\r",
       "command_waiting": "rmdir workspace",
       "incorrect": "Remove the workspace directory.\n\rIf you need help with syntax, check out the manpage!"
     },
@@ -177,7 +177,7 @@
     },
     {
       "tag": "Review the commands we've used...",
-      "message": "\n\rNice! Let's think back on some of the commands we started to use.\n\r\n\rmkdir <FOLDER_NAME>             to make a new directory\n\rmv <SRC> <DEST>                 to move a file from once place to another\n\rrmdir <FOLDER_NAME>             to remove an EMPTY directory\n\rcp <SRC> <DEST>                 to copy a file from once place to another\n\rrm <FILE_NAME>                  to remove a file\n\r\n\rWhen you're ready to be done with this lesson, enter `cd` to change\n\rback into your home directory.\n\r",
+      "message": "\n\rNice! Let's think back on some of the commands we started to use.\n\r\n\rmkdir <FOLDER_NAME>             to make a new directory\n\rmv <SRC> <DEST>                 to move a file from once place to another\n\rrmdir <FOLDER_NAME>             to remove an EMPTY directory\n\rcp <SRC> <DEST>                 to copy a file from once place to another\n\rrm <FILE_NAME>                  to remove a file\n\r\n\rWhen you're ready to be done with this lesson, enter `cd` to change\n\rback into your home directory.\n\r\n\r",
       "command_waiting": "cd",
       "incorrect": "When you're ready to be done with this lesson, enter \n\r`cd` to change back into your home directory. "
     },
