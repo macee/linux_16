@@ -33,7 +33,7 @@ else:
 # ============================================================
 
 DATABASE = '/tmp/db.db'
-CONFIG = 'scavenger.json'
+CONFIG = 'filters.json'
 CERTIFICATE = 'certificate.crt'
 PRIVATE_KEY = 'privateKey.key'
 

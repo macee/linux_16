@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-19 21:57:09
+# @Last Modified time: 2016-09-26 20:48:24
 
 import json
 from colors.colors import *
@@ -52,9 +52,9 @@ class LessonBookClass(object):
 			if self.parent.using_time:
 				if self.parent.time_on:
 					if character in self.punction_stops:
-						time.sleep(0.08)
+						time.sleep(0.12)
 					else:
-						time.sleep(0.02)
+						time.sleep(0.04)
 
 
 	def select_lesson( self ):
@@ -217,6 +217,8 @@ Enter the number '0' to go back to what you were doing.\n'''))
 		if ( current_lesson.has_key("command_waiting") ): 
 			command_waiting = current_lesson["command_waiting"]
 
+			# print R(command_waiting) # This was for debugging...
+
 			if ( current_lesson.has_key("incorrect") ): 
 				incorrect = current_lesson["incorrect"]
 			if self.current_lesson["concepts"][self.lesson_pointer].has_key("in_between_text"):
@@ -229,6 +231,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 		else:
 			# This is the very end of the lesson. Say your last words and move on.
 			self.say(C( message ))
+
 			self.go_to_next_lesson()
 			return
 
