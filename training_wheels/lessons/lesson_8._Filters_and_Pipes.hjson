@@ -341,7 +341,8 @@ and do this a few times until you get tired of it and hit Control+C to break out
 "message" : '''
 
 Do you see what it is doing? It gets "the first 10 lines" of everything you type...
-but you can only enter one line at a time. So it displays it out anyway!
+but you can only enter one line at a time. Either way, you're still entering data
+into the `head` command, it is still reading in data from what you type in.
 
 The point that I am getting at here is that the `head` command-- and `wc` and `tail`--
 don't need to have a file passed into them -- they can read from standard input.

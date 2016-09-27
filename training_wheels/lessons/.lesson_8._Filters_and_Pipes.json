@@ -87,7 +87,7 @@
     },
     {
       "tag": "We can take advantage of this with redirection",
-      "message": "\n\rDo you see what it is doing? It gets \"the first 10 lines\" of everything you type...\n\rbut you can only enter one line at a time. So it displays it out anyway!\n\r\n\rThe point that I am getting at here is that the `head` command-- and `wc` and `tail`--\n\rdon't need to have a file passed into them -- they can read from standard input.\n\r\n\rThis is awesome, because we can take advantage of it with redirection. You've used\n\rredirection before, when you used a `>` greater than symbol to redirect some command's\n\rstandard output to a file. \n\r\n\rRemember you can can control standard output with `echo`?\n\r\n\rEnter `echo \"Intro to Linux\"` to refresh your memory.\n\r\n\r",
+      "message": "\n\rDo you see what it is doing? It gets \"the first 10 lines\" of everything you type...\n\rbut you can only enter one line at a time. Either way, you're still entering data\n\rinto the `head` command, it is still reading in data from what you type in.\n\r\n\rThe point that I am getting at here is that the `head` command-- and `wc` and `tail`--\n\rdon't need to have a file passed into them -- they can read from standard input.\n\r\n\rThis is awesome, because we can take advantage of it with redirection. You've used\n\rredirection before, when you used a `>` greater than symbol to redirect some command's\n\rstandard output to a file. \n\r\n\rRemember you can can control standard output with `echo`?\n\r\n\rEnter `echo \"Intro to Linux\"` to refresh your memory.\n\r\n\r",
       "command_waiting": "echo \"Intro to Linux\"",
       "incorrect": "Enter the command: `echo \"Intro to Linux\"`"
     },
