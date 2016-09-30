@@ -10,11 +10,23 @@ import sys
 import time
 import socket
 import os
-import colorama
 import subprocess
 import textwrap
 import threading
 import json
+
+try:
+	import colorama
+except ImportError as e:
+
+	print '''
+[!] Error importing colorama! Training Wheels works best with colorama. 
+You should be able to install it with the command:
+
+sudo apt-get install python-colorama
+'''
+
+	exit(-1)
 
 from shell.wrapper import TrainingWheelsWrapperClass
 

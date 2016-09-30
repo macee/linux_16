@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-30 18:11:53
+# @Last Modified time: 2016-09-30 18:21:05
 
 import json
 from colors.colors import *
@@ -46,6 +46,9 @@ class LessonBookClass(object):
 		self.something_to_say_inbetween = ""
 
 	def say( self, message ):
+
+		if ( not message.endswith('\n\n') ): message += '\n\n'
+
 		for character in message:
 			sys.stdout.write(character)
 			sys.stdout.flush()
@@ -288,8 +291,8 @@ Enter the number '0' to go back to what you were doing.\n'''))
 					self.parent.process()
 
 					if ( not self.is_in_directory( proper_directory ) ):
-						self.say( R( "\nYOU ARE IN THE WRONG DIRECTORY\n" ) )
-						self.say( R( "Please change directory to " ) + Y( proper_directory + "\n\n" ) )
+						print R( "\nYOU ARE IN THE WRONG DIRECTORY" )
+						print R( "Please change directory to " ) + Y( proper_directory + "\n\n" )
 
 					continue
 				
