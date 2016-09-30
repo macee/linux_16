@@ -735,7 +735,7 @@ have to retype all that stuff, and tack on another pipe!
 
 "message" : '''
 
-You can piece together what syntax is, right? The `-d` arguments mean you
+You can piece together what that syntax is, right? The `-d` arguments mean you
 want to specify the delimeter, and the `-f2` means you want the second field.
 You can pass in any number here, or even supply a range (like `-f2-5`) or 
 multiple fields (like `-f1,2,3`)

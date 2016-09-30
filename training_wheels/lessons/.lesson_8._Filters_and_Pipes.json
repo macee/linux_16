@@ -171,7 +171,7 @@
     },
     {
       "tag": "We can keep on cutting up the data!",
-      "message": "\n\rYou can piece together what syntax is, right? The `-d` arguments mean you\n\rwant to specify the delimeter, and the `-f2` means you want the second field.\n\rYou can pass in any number here, or even supply a range (like `-f2-5`) or \n\rmultiple fields (like `-f1,2,3`)\n\r\n\rNow we've got all the phone numbers. Next, let's say I wanted to know the\n\runique area codes. Can you figure out how we can cut up this data to get the\n\rarea codes?\n\r\n\rRemember to put a space between each part of your command; or else \n\rTraining Wheels won't be able to validate your input (sorry!)\n\r\n\r",
+      "message": "\n\rYou can piece together what that syntax is, right? The `-d` arguments mean you\n\rwant to specify the delimeter, and the `-f2` means you want the second field.\n\rYou can pass in any number here, or even supply a range (like `-f2-5`) or \n\rmultiple fields (like `-f1,2,3`)\n\r\n\rNow we've got all the phone numbers. Next, let's say I wanted to know the\n\runique area codes. Can you figure out how we can cut up this data to get the\n\rarea codes?\n\r\n\rRemember to put a space between each part of your command; or else \n\rTraining Wheels won't be able to validate your input (sorry!)\n\r\n\r",
       "command_waiting": "cat press_directory.txt | grep -i \"phone\" | cut -d \" \" -f2 | cut -d \"-\" -f1",
       "incorrect": "Here's the syntax that I came up with:\n\r\n\r`cat press_directory.txt | grep -i \"phone\" | cut -d \" \" -f2 | cut -d \"-\" -f1`\n\r"
     },

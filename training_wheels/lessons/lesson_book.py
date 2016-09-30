@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-26 20:48:24
+# @Last Modified time: 2016-09-30 18:11:53
 
 import json
 from colors.colors import *
@@ -56,6 +56,9 @@ class LessonBookClass(object):
 					else:
 						time.sleep(0.04)
 
+	def is_in_directory( self, directory = None ):
+		if directory == None: return true
+		else: return os.getcwd() == directory.replace("~", os.environ["HOME"])
 
 	def select_lesson( self ):
 
@@ -211,11 +214,17 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 		current_lesson = self.current_lesson["concepts"][self.lesson_pointer]
 
-
 		# Begin to load everything from the lesson and current concept...
+		# if ( current_lesson.has_key("message") ): message = current_lesson["message"]
+
 		if ( current_lesson.has_key("message") ): message = current_lesson["message"]
+
 		if ( current_lesson.has_key("command_waiting") ): 
 			command_waiting = current_lesson["command_waiting"]
+
+			if ( current_lesson.has_key("proper_directory") ): 
+				proper_directory = current_lesson["proper_directory"]
+
 
 			# print R(command_waiting) # This was for debugging...
 
@@ -226,7 +235,6 @@ Enter the number '0' to go back to what you were doing.\n'''))
 					R( self.current_lesson["concepts"][self.lesson_pointer]["in_between_text"] )
 			else:
 				self.something_to_say_inbetween = ""
-
 
 		else:
 			# This is the very end of the lesson. Say your last words and move on.
@@ -250,29 +258,41 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 			# While they have not entered their command, keep prompting.
 			while (command_waiting not in self.seen_entries):
+
 				self.parent.prompt()
 
-				# Analyze what they entered and determined if it is correct
-				arguments = self.parent.entered_input.split(" ")
-				number_of_arguments = len(arguments)
+				if ( self.is_in_directory( proper_directory ) ):
 
-				if ( number_of_arguments != number_of_wanted_arguments ):
+					# Analyze what they entered and determined if it is correct
+					arguments = self.parent.entered_input.split(" ")
+					number_of_arguments = len(arguments)
+
+					if ( number_of_arguments != number_of_wanted_arguments ):
+						self.parent.process()
+						print( Y("\n" + textwrap.dedent(incorrect) + "\n") )
+						continue
+						
+					correct = True
+					for arg in range(number_of_wanted_arguments):
+						if wanted_arguments[arg] == "???":
+							if number_of_wanted_arguments == number_of_arguments:
+								continue
+							else: correct = False
+						if wanted_arguments[arg] != arguments[arg]:
+							correct = False
+					if correct:
+						self.new_lesson_pointer += 1
+						self.parent.time_on = True
+				else:
+					
 					self.parent.process()
-					print( Y("\n" + textwrap.dedent(incorrect) + "\n") )
+
+					if ( not self.is_in_directory( proper_directory ) ):
+						self.say( R( "\nYOU ARE IN THE WRONG DIRECTORY\n" ) )
+						self.say( R( "Please change directory to " ) + Y( proper_directory + "\n\n" ) )
+
 					continue
-					
-				correct = True
-				for arg in range(number_of_wanted_arguments):
-					if wanted_arguments[arg] == "???":
-						if number_of_wanted_arguments == number_of_arguments:
-							continue
-						else: correct = False
-					if wanted_arguments[arg] != arguments[arg]:
-						correct = False
-				if correct:
-					self.new_lesson_pointer += 1
-					self.parent.time_on = True
-					
+				
 				self.parent.process()
 
 				if ( self.new_lesson_pointer == self.lesson_pointer ):

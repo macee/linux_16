@@ -1,0 +1,17 @@
+{
+  "name": "9. Test of new Functionality",
+  "concepts": [
+    {
+      "tag": "Testing if you are in the current directory.",
+      "message": "\n\rTry to move out of this directory. Training Wheels should not let you continue\n\rif you are not in the correct directory!\n\r",
+      "proper_directory": "~/linux_16/resources/filters",
+      "command_waiting": "echo \"Hello\"",
+      "incorrect": "Try to move out of this directory."
+    },
+    {
+      "tag": "You should not be able to move on if you are not in the correct directory.",
+      "message": "\n\rYou should not be able to move on unless you are in the correct directory.\n\rThis is the last message in the lesson.\n\r\n\r",
+      "proper_directory": "~/linux_16/resources/filters"
+    }
+  ]
+}
