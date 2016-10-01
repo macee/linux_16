@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 # @Author: john
 # @Date:   2016-08-13 23:48:50
-# @Last Modified by:   john
-# @Last Modified time: 2016-08-14 00:27:41
+# @Last Modified by:   John Hammond
+# @Last Modified time: 2016-09-30 22:14:21
 
 
 from colorama import *
@@ -11,7 +11,7 @@ from colorama import *
 # These are meant to be shorthand function calls to quickly turn a string
 # into something with color. 
 
-def G(string): return Fore.GREEN + Style.BRIGHT + string + Fore.RESET + Style.NORMAL
+def G(string): return Fore.GREEN + Style.BRIGHT + string + Fore.RESET + Style.NORMAL 
 def g(string): return Fore.GREEN + string + Fore.RESET
 def B(string): return Fore.BLUE + Style.BRIGHT + string + Fore.RESET + Style.NORMAL
 def b(string): return Fore.BLUE + string + Fore.RESET
@@ -25,3 +25,18 @@ def C(string): return Fore.CYAN + Style.BRIGHT + string + Fore.RESET + Style.NOR
 def c(string): return Fore.CYAN + string + Fore.RESET
 def W(string): return Fore.WHITE + Style.BRIGHT + string + Fore.RESET + Style.NORMAL
 def w(string): return Fore.WHITE + string + Fore.RESET 
+
+def _G(string): return Back.GREEN + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _g(string): return Back.GREEN + string + Back.RESET
+def _B(string): return Back.BLUE + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _b(string): return Back.BLUE + string + Back.RESET
+def _R(string): return Back.RED + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _r(string): return Back.RED + string + Back.RESET
+def _Y(string): return Back.YELLOW + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _y(string): return Back.YELLOW + string + Back.RESET
+def _M(string): return Back.MAGENTA + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _m(string): return Back.MAGENTA + string + Back.RESET
+def _C(string): return Back.CYAN + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _c(string): return Back.CYAN + string + Back.RESET
+def _W(string): return Back.WHITE + Style.BRIGHT + string + Back.RESET + Style.NORMAL
+def _w(string): return Back.WHITE + string + Back.RESET 

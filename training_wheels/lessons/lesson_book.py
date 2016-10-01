@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-30 18:21:05
+# @Last Modified time: 2016-09-30 22:04:54
 
 import json
 from colors.colors import *
@@ -228,7 +228,6 @@ Enter the number '0' to go back to what you were doing.\n'''))
 			if ( current_lesson.has_key("proper_directory") ): 
 				proper_directory = current_lesson["proper_directory"]
 
-
 			# print R(command_waiting) # This was for debugging...
 
 			if ( current_lesson.has_key("incorrect") ): 
@@ -267,7 +266,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 				if ( self.is_in_directory( proper_directory ) ):
 
 					# Analyze what they entered and determined if it is correct
-					arguments = self.parent.entered_input.split(" ")
+					arguments = self.parent.entered_input.split()
 					number_of_arguments = len(arguments)
 
 					if ( number_of_arguments != number_of_wanted_arguments ):
@@ -284,6 +283,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 						if wanted_arguments[arg] != arguments[arg]:
 							correct = False
 					if correct:
+
 						self.new_lesson_pointer += 1
 						self.parent.time_on = True
 				else:
@@ -292,7 +292,7 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 					if ( not self.is_in_directory( proper_directory ) ):
 						print R( "\nYOU ARE IN THE WRONG DIRECTORY" )
-						print R( "Please change directory to " ) + Y( proper_directory + "\n\n" )
+						print R( "To continue, please change directory to '" + proper_directory + "'\n\n" )
 
 					continue
 				

@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-25 17:47:11
+# @Last Modified time: 2016-09-30 21:58:55
 
 import os
 import textwrap
@@ -54,8 +54,7 @@ class TrainingWheelsShellClass():
 
 		if ( to_directory == '' ):
 			os.chdir(os.environ['HOME'])
-		# elif ( to_directory == '~' ):
-		# 	os.chdir(os.environ['HOME'])
+			
 		else:
 			try:
 				os.chdir(to_directory)
