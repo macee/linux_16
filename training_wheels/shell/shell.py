@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:02:23
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-30 21:58:55
+# @Last Modified time: 2016-10-04 00:19:33
 
 import os
 import textwrap
@@ -39,8 +39,12 @@ class TrainingWheelsShellClass():
 			"quit": self.say_goodbye,
 			"cd": self.change_directory,
 			"nano": self.protect_from_nano,
+			"sudo passwd guest": self.change_guest_password,
 		}
 
+	def change_guest_password(self):
+		# Have to run it this way so the line handling happens correctly...
+		os.system("sudo passwd guest")
 
 	def protect_from_nano(self):
 		print R("Training Wheels cannot handle running nano!")

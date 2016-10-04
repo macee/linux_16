@@ -2,7 +2,7 @@
 # @Author: John Hammond
 # @Date:   2016-08-25 00:50:06
 # @Last Modified by:   John Hammond
-# @Last Modified time: 2016-09-30 22:04:54
+# @Last Modified time: 2016-10-04 00:59:00
 
 import json
 from colors.colors import *
@@ -60,7 +60,7 @@ class LessonBookClass(object):
 						time.sleep(0.04)
 
 	def is_in_directory( self, directory = None ):
-		if directory == None: return true
+		if directory == None: return True
 		else: return os.getcwd() == directory.replace("~", os.environ["HOME"])
 
 	def select_lesson( self ):
@@ -227,6 +227,8 @@ Enter the number '0' to go back to what you were doing.\n'''))
 
 			if ( current_lesson.has_key("proper_directory") ): 
 				proper_directory = current_lesson["proper_directory"]
+				if proper_directory.endswith('/'): proper_directory = proper_directory[:-1]
+			else: proper_directory = None
 
 			# print R(command_waiting) # This was for debugging...
 
