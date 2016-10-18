@@ -217,7 +217,7 @@ Well, what can we do, then?
 
 We are on our friends box, and we want to get cozy.
 
-Well, since we have this `linux` user dedicated to us right now, we can use its home directory however we want. If you navigate to the `/home` directory and check out the file permissions with `ls -l` again, you should be able to see you are the owner of your own home directory (duh)!
+Since we have this `linux` user dedicated to us right now, we can use its home directory however we want. If you navigate to the `/home` directory and check out the file permissions with `ls -l` again, you should be able to see you are the owner of your own home directory (duh)!
 
 ```
 drwxr-xr-x  2 gcwyman gcwyman 4096 Sep  1  2015 gcwyman
@@ -225,7 +225,7 @@ drwxr-xr-x  2 linux   linux   4096 Oct 18 02:58 linux
 drwxr-xr-x 21 pi      pi      4096 Sep 20 12:33 pi
 ```
 
-And don't forget! The `/tmp` directory is ___WORLD-READABLE___ and ___WORLD-WRITABLE__. Check it out:
+And don't forget! The `/tmp` directory is ___WORLD-READABLE___ and ___WORLD-WRITABLE___. Check it out:
 
 ```
 ls -l /
