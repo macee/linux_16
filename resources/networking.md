@@ -274,7 +274,7 @@ That is just about all I wanted to show you for todays class. Super simple, I kn
 
 When you are finished and want to disconnect from the [`ssh`][ssh] connection, you can enter `exit` to get back to your own machine. At that point you can [`ssh`][ssh] again at any point.
 
-If you want, have some fun with this. How many people can you [`ssh`][ssh] into? Can you get everyone in the classs to [`ssh`][ssh] into your computer, and try and wreak havoc?
+If you want, have some fun with this. How many people can you [`ssh`][ssh] into? Can you get everyone in the class to [`ssh`][ssh] into your computer, and try and wreak havoc?
 
 When you are connected to the other computer, can you do any damage even without having `root` access? ___Have you ever heard of a [fork bomb]??___
 
