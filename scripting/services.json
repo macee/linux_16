@@ -1,0 +1,50 @@
+{
+	"app_title" : "USCGA Scripting CTF",
+
+	"app_navigation_logged_out": {		
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Login": "/login",
+		"Register": "/register" },
+
+	"app_navigation_logged_in": {
+
+		"Submit a Flag": "/challenges",
+		"About": "/about",
+		"Scoreboard": "/scoreboard",
+		"Log Out": "/logout"
+	},
+
+	"app_about": "<p>
+			This CTF competition is all about automating a tool to do things  
+			for you;hopefully with it you will learn a lot more  
+			<a href='https://www.python.org/'>Python</a>, and feel a bit  
+			more powerful when you see how much scripting can really 
+			do for you. 
+		</p>
+		<p> 
+			The flags will change every minute, so your goal is to write some 
+			code that will retrieve the flag from a service and submit it for 
+			you, so there is no intervention by you as the user at all. 
+		</p> 
+		<p>
+			There are some serious modules I recommend to help you do this.  
+			This CTF is meant to be used as a way of learning, so please,   
+			don't be afraid to ask around how to do this kind of stuff -- in  
+			fact, that's what we want. 
+		</p>
+		<h2>Good luck and have fun!</h2>
+	",
+
+	"services": [
+		{ 
+			"title": "<a href='https://github.com/JohnHammond/scripting_playground'>A New github Repository</a>",
+			"description": "
+				This repository contains an executable that will give you a flag. 
+				In each commit there is another executable, and even the commit SHA1 hashes themselves
+				are flags you can submit for points.
+			",
+			"points" : 10
+		}
+	]
+}
