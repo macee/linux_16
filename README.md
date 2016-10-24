@@ -51,6 +51,11 @@ Files & Directory Information
     
     In this directory is the source code and material for the "training wheels" [`bash`][bash] shell that was put together for this course, to create a more interactive learning experience. It was written in [Python] should continue to be maintained throughout the course.  
 
+* [`scavenger_hunt/`](scavenger_hunt/)
+    
+    This directory holds all the source code for the "[Linux] Scavenger Hunt," which was an activity to practice working with files and folders and navigating through the [Linux] file system. It itself is a [Python] web application written with [Flask], using [JSON] to keep track of the challenges. 
+
+
 [MicroSD]: https://en.wikipedia.org/wiki/MicroSD
 [Raspbian]: https://www.raspberrypi.org/downloads/raspbian/
 [operating system]: https://en.wikipedia.org/wiki/Operating_system
@@ -66,3 +71,5 @@ Files & Directory Information
 [open-source]: https://en.wikipedia.org/wiki/Open-source_software
 [Python]: https://www.python.org/
 [github]: https://github.com
+[Flask]: http://flask.pocoo.org/
+[JSON]: http://www.json.org/
