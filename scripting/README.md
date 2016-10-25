@@ -199,6 +199,39 @@ echo "This command, 'ls > /dev/null 2>&1', will NEVER display any output!"
 ls > /dev/null 2>&1
 ```
 
+Functions
+----------
+
+Functions in [`bash`][bash] are declared with the simple keyword: `function`
+
+``` bash
+#!/bin/bash
+
+function say_hello(){
+	echo "Hello everybody."
+}
+
+say_hello
+```
+
+They are called like a command, without explicity putting parentheses or any special formatting -- just the name of the function.
+
+
+To work with arguments, you can access their variables in the body of the function by specifying a variable based off a number.
+The first argument will be `$1`, the second will be `$2`, and so on.
+
+``` bash
+#!/bin/bash
+
+function say_hello_to_someone(){
+	echo "Hello $1."
+}
+
+
+say_hello_to_someone "LT Wyman"
+```
+
+
 The If Statement
 --------
 
@@ -248,7 +281,7 @@ done
 The While Loop
 ------
 
-The `while` loop in [`bash`][bash] has the structure as the `if` statement:
+The `while` loop in [`bash`][bash] has the same structure as the `if` statement:
 
 ``` bash
 while [ CONDITION ]

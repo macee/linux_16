@@ -81,7 +81,7 @@ function create_database(){
 
 	rm -f $DATABASE
 	sqlite3 $DATABASE < $SCHEMA_FILE || panic
-	chown $CURRENT_USER $DATABASE || panic
+	chown $CURRENT_USER $DATABASE
 	sed -i '0,/\$DATABASE/{s/\$DATABASE/'${DATABASE//\//\\/}'/}' $NEW_SERVER_FILE  || panic
 
 }

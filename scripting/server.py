@@ -43,7 +43,7 @@ else:
 
 # ===========================================================================
 
-DATABASE = '/tmp/db.db'
+DATABASE = '/tmp/database.db'
 CONFIG = 'services.json'
 CERTIFICATE = 'certificate.crt'
 PRIVATE_KEY = 'privateKey.key'
@@ -333,8 +333,6 @@ def submit():
 
 			if ( flag in solved_challenges ):
 				return 'You already submitted this flag!\n'
-
-			print solved_challenges
 
 			new_score = current_score + correct_answers[flag]
 			solved_challenges.append( flag + " " )
