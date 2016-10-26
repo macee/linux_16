@@ -30,7 +30,7 @@ All scripts in [Linux] start with a very special line that tell [Linux] what pro
 The syntax for the [sha-bang line] is a special notation with `#!` followed by the path of the program you want to execute the script. So, if we want [`bash`][bash] to run it, where does [`bash`][bash] live in our file system?
 
 ```
-$ where bash
+$ which bash
 /bin/bash
 ```
 
