@@ -117,7 +117,7 @@ When you are done writing your code, you can break out of [`nano`][nano] with `C
 
 At this point at the [command-line], you will want to __compile__ your program. This is unique to a _[programming language]_ ... you never _compile_ a [scripting language] like [Python] like this.
 
-In [Linux], the most common [C] compiler is called [`gcc`][gcc], the ___[GNU] Compiler Collection___, with [GNU] being the backend project with [Linux].
+In [Linux], the most common [C] compiler is called [`gcc`][gcc], the ___[GNU] Compiler Collection___, with [GNU] being the backend project with [Linux]. It can _compile_ programs, much like the [Microsoft Visual Studio] that you are used to, except __it doesn't suck__ and it runs from the [command-line].
 
 If you want, check out the [man page] for it!
 
@@ -592,3 +592,4 @@ In reality, you will likely find yourself installing things and working with sof
 [home directory]: https://en.wikipedia.org/wiki/Home_directory
 [temporary folder]: https://en.wikipedia.org/wiki/Temporary_folder
 [temporary directory]: https://en.wikipedia.org/wiki/Temporary_folder
+[Microsoft Visual Studio]: https://en.wikipedia.org/wiki/Microsoft_Visual_Studio
