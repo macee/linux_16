@@ -12,7 +12,7 @@ The goal for today is to get you familiar with the options that you have for _in
 The Breakdown
 --------------
 
-So you have been using [Linux] on the [Raspberry Pi] all this time using the native and built-in programs and tools. That isn't so bad, because [Linux] already offers you all the awesome you need from the get-go (isn't your complete with just [`bash`][bash] and [Python]?).... but _what if we want to install something new?_
+So you have been using [Linux] on the [Raspberry Pi] all this time using the native and built-in programs and tools. That isn't so bad, because [Linux] already offers you all the awesome you need from the get-go (isn't your life complete with just [`bash`][bash] and [Python]?).... but _what if we want to install something new?_
 
 To install something on a [Linux] computer, you basically have __two options__. [Linux] is very different than [Microsoft Windows] because you shouldn't really just go to a website to download and install something -- that's not safe. Who knows what people could put on the Internet? How can you trust what you are running on your computer, without knowing how it works and what is doing?
 
