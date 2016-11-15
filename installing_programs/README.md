@@ -502,7 +502,7 @@ Aftermath
 
 You've now done this two ways: from "scratch," handling a software package and code and a program all on your own... and using a [package manager] to handle everything for you in just one easy command.
 
-In reality, you will likely find yourself installing things and working with software through the repositories and the [package manager] like [`apt`][apt], but understanding how to [`make`][make] and configure a package of [source code] from a [tarball] is an incredible [Linux] skill that will come in handy if ( er, _when_ ) the repositories fail you.
+In reality, you will likely find yourself installing things and working with software through the repositories and the [package manager] like [`apt`][apt], but understanding how to [`make`][make] and configure a package of source code from a [tarball] is an incredible [Linux] skill that will come in handy if ( er, _when_ ) the repositories fail you.
 
 
 
@@ -518,6 +518,7 @@ In reality, you will likely find yourself installing things and working with sof
 [Microsoft Windows]: https://en.wikipedia.org/wiki/Microsoft_Windows
 [Windows]: https://en.wikipedia.org/wiki/Microsoft_Windows
 [command-line]: https://en.wikipedia.org/wiki/Command-line_interface
+[shell]: https://en.wikipedia.org/wiki/Command-line_interface
 [command line]: https://en.wikipedia.org/wiki/Command-line_interface
 [Raspberry Pi]: https://www.raspberrypi.org/
 [open-source]: https://en.wikipedia.org/wiki/Open-source_software
@@ -535,6 +536,7 @@ In reality, you will likely find yourself installing things and working with sof
 [she-bang line]: https://en.wikipedia.org/wiki/Shebang_(Unix)
 [chmod]: https://en.wikipedia.org/wiki/Chmod
 [scripting language]: https://en.wikipedia.org/wiki/Scripting_language
+[scripting languages]: https://en.wikipedia.org/wiki/Scripting_language
 [programming language]: https://en.wikipedia.org/wiki/Programming_language
 [command substitution]: http://mywiki.wooledge.org/CommandSubstitution
 [standard output]: https://en.wikipedia.org/wiki/Standard_streams#Standard_output_.28stdout.29
@@ -553,7 +555,9 @@ In reality, you will likely find yourself installing things and working with sof
 [return type]: https://en.wikipedia.org/wiki/Return_type
 [puts]: https://www.tutorialspoint.com/c_standard_library/c_function_puts.htm
 [scanf]: https://www.tutorialspoint.com/c_standard_library/c_function_scanf.htm
-[format specifiers]: http://www.codeforwin.in/2015/05/list-of-all-format-specifiers-in-c.html
+[format specifiers]: http://www.codeforwin.in/2015/05/
+[format identifier]: http://www.codeforwin.in/2015/05/
+[format identifiers]: http://www.codeforwin.in/2015/05/list-of-all-format-specifiers-in-c.html
 [format specifier]: http://www.codeforwin.in/2015/05/list-of-all-format-specifiers-in-c.html
 [standard library]: https://en.wikipedia.org/wiki/Standard_library
 [stdio.h]: https://www.tutorialspoint.com/c_standard_library/stdio_h.htm
@@ -585,3 +589,6 @@ In reality, you will likely find yourself installing things and working with sof
 [apt]: https://en.wikipedia.org/wiki/Advanced_Packaging_Tool
 [apt-get]: https://en.wikipedia.org/wiki/Advanced_Packaging_Tool
 [cowsay]: https://en.wikipedia.org/wiki/Cowsay
+[home directory]: https://en.wikipedia.org/wiki/Home_directory
+[temporary folder]: https://en.wikipedia.org/wiki/Temporary_folder
+[temporary directory]: https://en.wikipedia.org/wiki/Temporary_folder
