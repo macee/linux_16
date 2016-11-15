@@ -108,7 +108,7 @@ int main(){
 }
 ```
 
-After you take the users name, you can print it out do whatever you want with it.
+After you take the users name, you can print it out or do whatever you want with it. It's _your_ program!
 
 Compiling your code
 -------------
