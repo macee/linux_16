@@ -292,7 +292,7 @@ This means that after these arguments, we can specify the name of the new [compr
 So in our case, to include the [`Makefile`][Makefile] and the source code:
 
 ```
-tar xfz our_tarball.tar.gz 
+tar cfz our_tarball.tar.gz  Makefile source_code.c
 ```
 
 The common file extension usage for a [tarball] is a `.tar`, and when it is [gzip] compressed, the `.gz` extension tacked on at the end.
