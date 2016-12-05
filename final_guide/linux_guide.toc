@@ -1,0 +1,64 @@
+\select@language {english}
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {paragraph}{}{1}{section*.2}
+\contentsline {paragraph}{}{1}{section*.3}
+\contentsline {subsection}{\numberline {1.1}Author's Note}{1}{subsection.1.1}
+\contentsline {paragraph}{}{1}{section*.4}
+\contentsline {paragraph}{}{1}{section*.5}
+\contentsline {paragraph}{}{1}{section*.6}
+\contentsline {paragraph}{}{1}{section*.7}
+\contentsline {paragraph}{}{1}{section*.8}
+\contentsline {section}{\numberline {2}The Raspberry Pi}{2}{section.2}
+\contentsline {paragraph}{}{2}{section*.9}
+\contentsline {paragraph}{}{2}{section*.10}
+\contentsline {paragraph}{}{2}{section*.11}
+\contentsline {subsection}{\numberline {2.1}Advantages}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Disadvantages}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Future Recommendations}{3}{subsection.2.3}
+\contentsline {paragraph}{}{3}{section*.12}
+\contentsline {paragraph}{}{3}{section*.13}
+\contentsline {paragraph}{}{3}{section*.14}
+\contentsline {paragraph}{}{3}{section*.15}
+\contentsline {subsection}{\numberline {2.4}Hardware \& Equipment}{3}{subsection.2.4}
+\contentsline {paragraph}{}{3}{section*.16}
+\contentsline {subsection}{\numberline {2.5}Wireless Optional}{4}{subsection.2.5}
+\contentsline {paragraph}{}{4}{section*.17}
+\contentsline {paragraph}{}{4}{section*.18}
+\contentsline {subsection}{\numberline {2.6}HDMI Output}{4}{subsection.2.6}
+\contentsline {paragraph}{}{4}{section*.19}
+\contentsline {paragraph}{}{4}{section*.20}
+\contentsline {section}{\numberline {3}The Github Repository}{4}{section.3}
+\contentsline {paragraph}{}{4}{section*.21}
+\contentsline {paragraph}{}{4}{section*.22}
+\contentsline {subsection}{\numberline {3.1}Students' Private Repositories}{4}{subsection.3.1}
+\contentsline {paragraph}{}{4}{section*.23}
+\contentsline {subsection}{\numberline {3.2}Class Public Repository}{4}{subsection.3.2}
+\contentsline {paragraph}{}{4}{section*.24}
+\contentsline {paragraph}{}{5}{section*.25}
+\contentsline {subsection}{\numberline {3.3}Create a Sandbox Environment}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Save a copy of the phishing e-mail}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Replicate all external sources referred to}{5}{subsection.3.5}
+\contentsline {section}{\numberline {4}Identify}{5}{section.4}
+\contentsline {subsection}{\numberline {4.1}This is an All-Hands Evolution}{5}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Determine who clicked the link}{5}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Determine when the link was clicked}{5}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Determine any other attack vectors}{5}{subsection.4.4}
+\contentsline {section}{\numberline {5}Containment}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Set up an Internet Filter}{5}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Erase the E-mail}{5}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Notify and Warn those affected}{6}{subsection.5.3}
+\contentsline {section}{\numberline {6}Eradication \& Recovery}{6}{section.6}
+\contentsline {subsection}{\numberline {6.1}Re-image affected user machines}{6}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Blacklist malicious IP addresses}{6}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Remind users they must handle their own data}{6}{subsection.6.3}
+\contentsline {section}{\numberline {7}Develop an After-Action Report}{6}{section.7}
+\contentsline {subsection}{\numberline {7.1}Document everything}{6}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Formalize a Report}{6}{subsection.7.2}
+\contentsline {section}{\numberline {8}Reflect on the Incident}{6}{section.8}
+\contentsline {subsection}{\numberline {8.1}Assess your Team}{6}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Review Network Architecture}{6}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Future Mitigations}{6}{subsection.8.3}
+\contentsline {section}{\numberline {9}What now?}{6}{section.9}
+\contentsline {subsection}{\numberline {9.1}Get Involved}{6}{subsection.9.1}
+\contentsline {subsection}{\numberline {9.2}Take off the Blindfolds}{6}{subsection.9.2}
+\contentsline {subsection}{\numberline {9.3}Start the process all over again}{6}{subsection.9.3}

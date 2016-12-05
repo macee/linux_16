@@ -1,0 +1,58 @@
+
+__WEEK 1__
+============
+
+History / Intro / Hardware / Syllabus
+Play time
+Github
+Training Wheels
+
+----------------------------------------------
+
+
+__WEEK 2__
+============
+
+1. Finish everyone on github
+2. John Do a small 5 minute demo
+    * Web page? Music? Data?
+3. LT Do a formal introduction of the shell (bash, zsh, sh)
+    * mention the distinction between a command and an argument
+    * mentions standard input, standard output, etc..
+4. LT Briefly discuss Linux file system
+5. LT will bring up the linux fundamentals book
+6. Follow-along demo on how to add and push your history to their private repo
+    * Put up instructions how to capture and push history on linux_16
+* Let them run throuhg training wheels
+* End with using nano to enter a journal entry
+
+------------------
+
+FOR TRAINING WHEELS...
+* __ADD A MARKDOWN FILE TO ADD HISTORY AND THINGS TO GITHUB__.
+
+Look at the man pages for other commands. 
+* pwd
+Explain difference between shorthand arguments and verbose '--help' arguments.
+Cover the [OPTIONAL] syntax.
+
+Also, mention how the man page will explain any default arguments (like `-P` in pwd)
+
+Then start to cover new commands. Make sure you cover case sensitivity in your filenames.
+* ls
+* mkdir 
+* rmdir (explain how you can't remove a folder that has files in it)
+* touch
+* mv
+* cp
+* rm
+
+Research ideas if they finish Training Wheels early?
+
+
+
+
+SANS voucher money for SANS online training? together? on excusal?
+server
+IDA pro
+CEH

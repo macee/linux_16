@@ -1,0 +1,39 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Author's Note}{section.1}% 2
+\BOOKMARK [1][-]{section.2}{The Raspberry Pi}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Advantages}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Disadvantages}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Future Recommendations}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Hardware \046 Equipment}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.5}{Wireless Optional}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.6}{HDMI Output}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{The Github Repository}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Students' Private Repositories}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Class Public Repository}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Create a Sandbox Environment}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.4}{Save a copy of the phishing e-mail}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.5}{Replicate all external sources referred to}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Identify}{}% 16
+\BOOKMARK [2][-]{subsection.4.1}{This is an All-Hands Evolution}{section.4}% 17
+\BOOKMARK [2][-]{subsection.4.2}{Determine who clicked the link}{section.4}% 18
+\BOOKMARK [2][-]{subsection.4.3}{Determine when the link was clicked}{section.4}% 19
+\BOOKMARK [2][-]{subsection.4.4}{Determine any other attack vectors}{section.4}% 20
+\BOOKMARK [1][-]{section.5}{Containment}{}% 21
+\BOOKMARK [2][-]{subsection.5.1}{Set up an Internet Filter}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.2}{Erase the E-mail}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.3}{Notify and Warn those affected}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Eradication \046 Recovery}{}% 25
+\BOOKMARK [2][-]{subsection.6.1}{Re-image affected user machines}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.2}{Blacklist malicious IP addresses}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.3}{Remind users they must handle their own data}{section.6}% 28
+\BOOKMARK [1][-]{section.7}{Develop an After-Action Report}{}% 29
+\BOOKMARK [2][-]{subsection.7.1}{Document everything}{section.7}% 30
+\BOOKMARK [2][-]{subsection.7.2}{Formalize a Report}{section.7}% 31
+\BOOKMARK [1][-]{section.8}{Reflect on the Incident}{}% 32
+\BOOKMARK [2][-]{subsection.8.1}{Assess your Team}{section.8}% 33
+\BOOKMARK [2][-]{subsection.8.2}{Review Network Architecture}{section.8}% 34
+\BOOKMARK [2][-]{subsection.8.3}{Future Mitigations}{section.8}% 35
+\BOOKMARK [1][-]{section.9}{What now?}{}% 36
+\BOOKMARK [2][-]{subsection.9.1}{Get Involved}{section.9}% 37
+\BOOKMARK [2][-]{subsection.9.2}{Take off the Blindfolds}{section.9}% 38
+\BOOKMARK [2][-]{subsection.9.3}{Start the process all over again}{section.9}% 39
