@@ -11,7 +11,7 @@ In this class, we'll be teaching you how to get started with the [Linux][Linux] 
 
 
 <p align="center">
-  <img src="https://github.com/macee/linux_16/blob/master/pictures/pi.png?raw=true" alt="The Raspberry Pi"/>
+  <img src="https://github.com/macee/linux_16/blob/master/pictures/pi.jpg?raw=true" alt="The Raspberry Pi"/>
 </p>
 
 
