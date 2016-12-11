@@ -53,7 +53,17 @@ function install_dependencies(){
 function create_certificate(){
 
 	echo "$0: ${GREEN}creating HTTPS certificates...${NC}"
-	openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout $PRIVATEKEY_FILE -out $CERTIFICATE_FILE || panic
+	# openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout $PRIVATEKEY_FILE -out $CERTIFICATE_FILE || panic
+	openssl req -newkey rsa:2048 -nodes -keyout "$PRIVATEKEY_FILE" \
+							-x509 -days 365 -out "$CERTIFICATE_FILE" <<EOF || panic
+US
+CT
+New London
+United States Coast Guard Academy
+Cyber Team
+John Hammond
+johnhammond010@gmail.com
+EOF
 
 	sed "0,/\$CERTIFICATE_FILE/{s/\$CERTIFICATE_FILE/$CERTIFICATE_FILE/}" $SERVER_FILE > $NEW_SERVER_FILE || panic
 	sed -i "0,/\$PRIVATEKEY_FILE/{s/\$PRIVATEKEY_FILE/$PRIVATEKEY_FILE/}" $NEW_SERVER_FILE || panic

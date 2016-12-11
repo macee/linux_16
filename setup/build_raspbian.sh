@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 RASPBIAN_FILENAME="2016-05-27-raspbian-jessie.img"
 MICROSD_DEVICE="/dev/mmcblk0"

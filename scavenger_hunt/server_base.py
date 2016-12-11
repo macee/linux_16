@@ -87,7 +87,7 @@ else:
 	
 def init_db():
 	with closing(connect_db()) as db:
-	    with app.open_resource('schema.sql', mode='r') as f:
+	    with app.open_resource(app.config['DATABASE'], mode='r') as f:
 	        db.cursor().executescript(f.read())
 	    db.commit()
 
@@ -258,6 +258,6 @@ if ( __name__ == "__main__" ):
 
 	prepare_challenges()
 	context = (CERTIFICATE, PRIVATE_KEY)
-	# app.run( host="0.0.0.0", debug=False, ssl_context=context, port = 443, threaded = True )
-	app.run( host="0.0.0.0", debug=False, port = 2000, threaded = True )
+	app.run( host="0.0.0.0", debug=False, ssl_context=context, port = 2000, threaded = True )
+	#app.run( host="0.0.0.0", debug=False, port = 2000, threaded = True )
 
