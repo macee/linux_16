@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <time.h>
-#include <string.h> 
+#include <string.h>
 #include "sha1.h"
 #define SIZE_OF_BUFFER 8
 

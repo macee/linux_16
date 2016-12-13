@@ -1,5 +1,5 @@
 all:
-	g++ hashing_test.cpp sha1.cpp -o hashing_test
+	g++ minutehash.cpp sha1.cpp -o minutehash
 
 clean:
-	rm hashing_test
+	rm minutehash
