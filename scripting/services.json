@@ -1,5 +1,5 @@
 {
-	"app_title" : "USCGA Scripting CTF",
+	"app_title" : "Scripting Playground",
 
 	"app_navigation_logged_out": {		
 		"About": "/about",
@@ -15,23 +15,12 @@
 		"Log Out": "/logout"
 	},
 
-	"app_about": "<p>
-			This CTF competition is all about automating a tool to do things  
-			for you;hopefully with it you will learn a lot more  
-			<a href='https://www.python.org/'>Python</a>, and feel a bit  
-			more powerful when you see how much scripting can really 
-			do for you. 
-		</p>
-		<p> 
-			The flags will change every minute, so your goal is to write some 
-			code that will retrieve the flag from a service and submit it for 
-			you, so there is no intervention by you as the user at all. 
-		</p> 
+	"app_about": "
 		<p>
-			There are some serious modules I recommend to help you do this.  
-			This CTF is meant to be used as a way of learning, so please,   
-			don't be afraid to ask around how to do this kind of stuff -- in  
-			fact, that's what we want. 
+		The idea behind this Scripting Playground is to use <code>git</code> as a vessel to teach <code>bash</cody> scripting. In some commits, there is an executable file, that once run, will yield a flag based off of the current time. The goal is to write a script that will run through each commit, run each program, and submit each flag -- each minute.
+		</p>
+		<p>
+		This could be done by hand of course, but it would be tedious and not very fruitful in regard to the game. So, the more you can script, the more you win!
 		</p>
 		<h2>Good luck and have fun!</h2>
 	",

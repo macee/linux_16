@@ -64,7 +64,7 @@ CT
 New London
 United States Coast Guard Academy
 Cyber Team
-github.com/uscga
+John Hammond
 johnhammond010@gmail.com
 EOF
 
