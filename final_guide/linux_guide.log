@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.24)  4 DEC 2016 23:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.4.24)  13 DEC 2016 02:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -228,20 +228,73 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip47
+\f@ncyO@elh=\skip48
+\f@ncyO@erh=\skip49
+\f@ncyO@olh=\skip50
+\f@ncyO@orh=\skip51
+\f@ncyO@elf=\skip52
+\f@ncyO@erf=\skip53
+\f@ncyO@olf=\skip54
+\f@ncyO@orf=\skip55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count110
+\lst@gtempboxa=\box28
+\lst@token=\toks20
+\lst@length=\count111
+\lst@currlwidth=\dimen118
+\lst@column=\count112
+\lst@pos=\count113
+\lst@lostspace=\dimen119
+\lst@width=\dimen120
+\lst@newlines=\count114
+\lst@lineno=\count115
+\lst@maxwidth=\dimen121
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count116
+\lst@skipnumbers=\count117
+\lst@framebox=\box29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
 (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count110
-\Gm@cntv=\count111
-\c@Gm@tempcnt=\count112
-\Gm@bindingoffset=\dimen118
-\Gm@wd@mp=\dimen119
-\Gm@odd@mp=\dimen120
-\Gm@even@mp=\dimen121
-\Gm@layoutwidth=\dimen122
-\Gm@layoutheight=\dimen123
-\Gm@layouthoffset=\dimen124
-\Gm@layoutvoffset=\dimen125
-\Gm@dimlist=\toks20
+\Gm@cnth=\count118
+\Gm@cntv=\count119
+\c@Gm@tempcnt=\count120
+\Gm@bindingoffset=\dimen122
+\Gm@wd@mp=\dimen123
+\Gm@odd@mp=\dimen124
+\Gm@even@mp=\dimen125
+\Gm@layoutwidth=\dimen126
+\Gm@layoutheight=\dimen127
+\Gm@layouthoffset=\dimen128
+\Gm@layoutvoffset=\dimen129
+\Gm@dimlist=\toks21
 )
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.sty
 Package: babel 2016/02/24 3.9q The Babel package
@@ -251,8 +304,8 @@ Language: english 2012/08/20 v3.3p English support from the babel system
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2016/02/24 3.9q Babel common definitions
-\babel@savecnt=\count113
-\U@D=\dimen126
+\babel@savecnt=\count121
+\U@D=\dimen130
 )
 \l@british = a dialect from \language\l@english 
 \l@UKenglish = a dialect from \language\l@english 
@@ -262,8 +315,8 @@ File: babel.def 2016/02/24 3.9q Babel common definitions
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks21
-\inpenc@posthook=\toks22
+\inpenc@prehook=\toks22
+\inpenc@posthook=\toks23
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/12/03 v1.1r UTF-8 support for inputenc
@@ -575,34 +628,34 @@ Now handling font encoding PD1 ...
 (/home/john/linux_16/final_guide/linux_guide.aux)
 \openout1 = `linux_guide.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
+LaTeX Font Info:    ... okay on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count114
-\scratchdimen=\dimen127
-\scratchbox=\box28
-\nofMPsegments=\count115
-\nofMParguments=\count116
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count117
-\MPscratchDim=\dimen128
-\MPnumerator=\count118
-\makeMPintoPDFobject=\count119
-\everyMPtoPDFconversion=\toks24
+\scratchcounter=\count122
+\scratchdimen=\dimen131
+\scratchbox=\box30
+\nofMPsegments=\count123
+\nofMParguments=\count124
+\everyMPshowfont=\toks24
+\MPscratchCnt=\count125
+\MPscratchDim=\dimen132
+\MPnumerator=\count126
+\makeMPintoPDFobject=\count127
+\everyMPtoPDFconversion=\toks25
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -618,8 +671,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 26.
+\AtBeginShipoutBox=\box31
+Package hyperref Info: Link coloring OFF on input line 56.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -627,17 +680,18 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count120
+\c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 56.
+LaTeX Info: Redefining \pageref on input line 56.
+LaTeX Info: Redefining \nameref on input line 56.
 
 (/home/john/linux_16/final_guide/linux_guide.out)
 (/home/john/linux_16/final_guide/linux_guide.out)
 \@outlinefile=\write3
 \openout3 = `linux_guide.out'.
 
+\c@lstlisting=\count129
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -673,22 +727,34 @@ LaTeX Info: Redefining \nameref on input line 26.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<logo.png, id=160, 1112.155pt x 977.6525pt>
+<logo.png, id=450, 1112.155pt x 977.6525pt>
 File: logo.png Graphic file (type png)
  <use logo.png>
-Package pdftex.def Info: logo.png used on input line 33.
+Package pdftex.def Info: logo.png used on input line 63.
 (pdftex.def)             Requested size: 448.07845pt x 393.88844pt.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} </home/john/linux_16/final_
 guide/logo.png>]
-(/home/john/linux_16/final_guide/linux_guide.tocpdfTeX warning (ext4): destinat
-ion with the same identifier (name{page.}) has been already used, duplicate ign
-ored
+(/home/john/linux_16/final_guide/linux_guide.toc
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 13.59999pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.64 ...process all over again}{6}{subsection.9.3}
-                                                   [2])
+l.187 ....1}Conceptual Design}{32}{subsection.6.1}
+                                                   [2]pdfTeX warning (ext4): de
+stination with the same identifier (name{page.}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.400 ... Server Setup Script}{73}{subsection.9.6}
+                                                   [3])
 \tf@toc=\write4
 \openout4 = `linux_guide.toc'.
 
@@ -696,75 +762,521 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.48 	\newpage
-               [3] <tux.jpg, id=219, 431.6125pt x 317.185pt>
+l.78 	\newpage
+               [4] <tux.jpg, id=585, 431.6125pt x 317.185pt>
 File: tux.jpg Graphic file (type jpg)
  <use tux.jpg>
-Package pdftex.def Info: tux.jpg used on input line 73.
+Package pdftex.def Info: tux.jpg used on input line 103.
 (pdftex.def)             Requested size: 273.1818pt x 200.75684pt.
 
 [1 </home/john/linux_16/final_guide/tux.jpg>]
-<pi.jpg, id=232, 150.5625pt x 150.5625pt>
+<pi.jpg, id=598, 150.5625pt x 150.5625pt>
 File: pi.jpg Graphic file (type jpg)
  <use pi.jpg>
-Package pdftex.def Info: pi.jpg used on input line 89.
+Package pdftex.def Info: pi.jpg used on input line 119.
 (pdftex.def)             Requested size: 200.7694pt x 200.7694pt.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 98.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 128.
+
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 98.
- [2 </home/john/linux_16/final_guide/pi.jpg>] <ubuntu_logo.png, id=241, 2007.5p
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
+ [2 </home/john/linux_16/final_guide/pi.jpg>] <ubuntu_logo.png, id=607, 2007.5p
 t x 468.75125pt>
 File: ubuntu_logo.png Graphic file (type png)
 
 <use ubuntu_logo.png>
-Package pdftex.def Info: ubuntu_logo.png used on input line 127.
+Package pdftex.def Info: ubuntu_logo.png used on input line 156.
 (pdftex.def)             Requested size: 200.73112pt x 46.87071pt.
  [3 </home/john/linux_16/final_guide/ubuntu_logo.png>]
-Overfull \hbox (19.33867pt too wide) in paragraph at lines 168--169
+Overfull \hbox (19.33867pt too wide) in paragraph at lines 196--197
 \OT1/cmr/m/n/10.95 typ-i-cally ti-tled with their last name (as an ex-am-ple, m
 ine is []https://github.com/macee/Hammond[]).
  []
 
 [4]
-Overfull \hbox (10.85234pt too wide) in paragraph at lines 185--189
-\OT1/cmr/m/n/10.95 Use a vir-tual ma-chine take a snap-shot be-fore open-ing th
-e e-mail and click-ing the link/downloading
+Overfull \hbox (46.86577pt too wide) in paragraph at lines 222--223
+\OT1/cmr/m/n/10.95 men-ta-tion for set-ting up Rasp-bian: []https://www.raspber
+rypi.org/documentation/installation/installing-
  []
 
-[5]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 271.
- [6]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 271.
- (/home/john/linux_16/final_guide/linux_guide.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 271.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 271.
+[5] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [6]
+<training_wheels.png, id=690, 671.50874pt x 425.59pt>
+File: training_wheels.png Graphic file (type png)
+
+<use training_wheels.png>
+Package pdftex.def Info: training_wheels.png used on input line 295.
+(pdftex.def)             Requested size: 421.57727pt x 267.18797pt.
+ [7 </home/john/linux_16/final_guide/training_wheels.png>] (/usr/share/texlive/
+texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [8]
+[9] [10] [11] [12] [13] [14] [15] [16]
+<bash.png, id=1038, 150.5625pt x 118.4425pt>
+File: bash.png Graphic file (type png)
+ <use bash.png>
+Package pdftex.def Info: bash.png used on input line 699.
+(pdftex.def)             Requested size: 200.7694pt x 157.93858pt.
+ [17 </home/john/linux_16/final_guide/bash.png>] [18]
+Overfull \hbox (28.79651pt too wide) in paragraph at lines 791--792
+\OT1/cmr/m/n/10.95 just a wrap-per for a clas-sic \OT1/cmtt/m/n/10.95 print \OT
+1/cmr/m/n/10.95 state-ment, but it checks with the par-ent (the \OT1/cmtt/m/n/1
+0.95 TrainingWheelsShell
+ []
+
+[19] [20] [21] [22] [23] [24] [25] [26]
+Overfull \hbox (22.13574pt too wide) in paragraph at lines 1054--1055
+ [][] \OT1/cmr/m/n/10.95 You should check out the HJ-SON project on-line for a 
+more for-mal grasp on it ([]https://hjson.org/[]),
+ []
+
+[27] [28] [29] [30] [31]
+<scavenger_hunt.png, id=1498, 829.59938pt x 543.53062pt>
+File: scavenger_hunt.png Graphic file (type png)
+
+<use scavenger_hunt.png>
+Package pdftex.def Info: scavenger_hunt.png used on input line 1239.
+(pdftex.def)             Requested size: 501.87683pt x 328.8163pt.
+ [32 </home/john/linux_16/final_guide/scavenger_hunt.png>] (/usr/share/texlive/
+texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) [33]
+[34]
+Overfull \hbox (8.60567pt too wide) in paragraph at lines 1383--1384
+ [][] \OT1/cmr/m/n/10.95 There are many other func-tions, like \OT1/cmtt/m/n/10
+.95 create[]database\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 create[]certificat
+e\OT1/cmr/m/n/10.95 , \OT1/cmtt/m/n/10.95 configure[]ctf\OT1/cmr/m/n/10.95 ,
+ []
+
+[35] [36] [37] <python-logo.png, id=1704, 250.9375pt x 250.9375pt>
+File: python-logo.png Graphic file (type png)
+
+<use python-logo.png>
+Package pdftex.def Info: python-logo.png used on input line 1512.
+(pdftex.def)             Requested size: 200.75073pt x 200.76175pt.
+ [38 </home/john/linux_16/final_guide/python-logo.png>]
+[39] [40] [41] <flask.png, id=1841, 369.35265pt x 144.54pt>
+File: flask.png Graphic file (type png)
+ <use flask.png>
+Package pdftex.def Info: flask.png used on input line 1689.
+(pdftex.def)             Requested size: 200.75073pt x 78.5621pt.
+
+[42 </home/john/linux_16/final_guide/flask.png>]
+<jinja2.png, id=1873, 344.28625pt x 141.52875pt>
+File: jinja2.png Graphic file (type png)
+ <use jinja2.png>
+Package pdftex.def Info: jinja2.png used on input line 1730.
+(pdftex.def)             Requested size: 200.75073pt x 82.52512pt.
+ [43 </home/john/linux_16/final_guide/jinja2.png>] [44]
+Overfull \hbox (36.84993pt too wide) in paragraph at lines 1810--1811
+ [][] \OT1/cmr/m/n/10.95 That wraps up the back-end server-side code. Re-mem-be
+r that it should be orig-i-nally \OT1/cmtt/m/n/10.95 server[]base.py\OT1/cmr/m/
+n/10.95 ;
+ []
+
+[45] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) [46] [47]
+<jquery.png, id=2035, 738.76pt x 181.67876pt>
+File: jquery.png Graphic file (type png)
+ <use jquery.png>
+Package pdftex.def Info: jquery.png used on input line 1928.
+(pdftex.def)             Requested size: 401.50146pt x 98.73988pt.
+ [48 </home/john/linux_16/final_guide/jquery.png>] [49] [50] [51] [52]
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 2119.
+
+
+<html.png, id=2204, 513.92pt x 513.92pt>
+File: html.png Graphic file (type png)
+ <use html.png>
+Package pdftex.def Info: html.png used on input line 2128.
+(pdftex.def)             Requested size: 130.48798pt x 130.48717pt.
+ [53 </home/john/linux_16/final_guide/html.png>] [54] [55]
+<gnu.jpg, id=2291, 1221.46478pt x 1221.46478pt>
+File: gnu.jpg Graphic file (type jpg)
+ <use gnu.jpg>
+Package pdftex.def Info: gnu.jpg used on input line 2215.
+(pdftex.def)             Requested size: 250.93842pt x 250.92377pt.
+ [56 </home/john/linux_16/final_guide/gnu.jpg>]
+Overfull \hbox (5.21382pt too wide) in paragraph at lines 2227--2228
+\OT1/cmr/m/n/10.95 that all of the nec-es-sary files were given on the repos-i-
+tory. These live in the \OT1/cmtt/m/n/10.95 resources/filters/
+ []
+
+<filter_activity.png, id=2303, 794.97pt x 687.31781pt>
+File: filter_activity.png Graphic file (type png)
+
+<use filter_activity.png>
+Package pdftex.def Info: filter_activity.png used on input line 2231.
+(pdftex.def)             Requested size: 501.87683pt x 433.92493pt.
+ [57 </home/john/linux_16/final_guide/filter_activity.png>]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 2239.
+
+[58] <mark.png, id=2349, 208.78pt x 128.48pt>
+File: mark.png Graphic file (type png)
+ <use mark.png>
+Package pdftex.def Info: mark.png used on input line 2299.
+(pdftex.def)             Requested size: 150.56305pt x 92.65843pt.
+
+<github.jpg, id=2350, 401.5pt x 234.8775pt>
+File: github.jpg Graphic file (type jpg)
+ <use github.jpg>
+Package pdftex.def Info: github.jpg used on input line 2311.
+(pdftex.def)             Requested size: 230.86334pt x 135.05708pt.
+ [59 </home/john/linux_16/final_guide/mark.png> </home/john/linux_16/final_guid
+e/github.jpg>]
+[60] <forkbomb.png, id=2400, 705.63625pt x 176.66pt>
+File: forkbomb.png Graphic file (type png)
+ <use forkbomb.png>
+Package pdftex.def Info: forkbomb.png used on input line 2368.
+(pdftex.def)             Requested size: 230.86334pt x 57.79659pt.
+
+<shebang.png, id=2401, 376.40625pt x 376.40625pt>
+File: shebang.png Graphic file (type png)
+ <use shebang.png>
+Package pdftex.def Info: shebang.png used on input line 2378.
+(pdftex.def)             Requested size: 150.56305pt x 150.56557pt.
+ [61 </home/john/linux_16/final_guide/forkbomb.png> </home/john/linux_16/final_
+guide/shebang.png>] <flag.png, id=2414, 250.9375pt x 250.9375pt>
+File: flag.png Graphic file (type png)
+ <use flag.png>
+Package pdftex.def Info: flag.png used on input line 2409.
+(pdftex.def)             Requested size: 130.48798pt x 130.49207pt.
+ [62 </home/john/linux_16/final_guide/flag.png>] [63]
+<sublime_text.png, id=2478, 256.96pt x 256.96pt>
+File: sublime_text.png Graphic file (type png)
+ <use sublime_text.png>
+Package pdftex.def Info: sublime_text.png used on input line 2489.
+(pdftex.def)             Requested size: 120.45044pt x 120.44969pt.
+
+[64 </home/john/linux_16/final_guide/sublime_text.png>]
+Overfull \hbox (2.57903pt too wide) in paragraph at lines 2530--2531
+ [][] \OT1/cmr/m/n/10.95 This func-tion es-sen-tially makes for a more ``user-f
+riendly'' func-tion to work with for command-
+ []
+
+[65] <sqlite.png, id=2539, 1027.84pt x 486.81876pt>
+File: sqlite.png Graphic file (type png)
+ <use sqlite.png>
+Package pdftex.def Info: sqlite.png used on input line 2579.
+(pdftex.def)             Requested size: 271.01349pt x 128.36009pt.
+ [66 </home/john/linux_16/final_guide/sqlite.png>] [67] [68] [69] [70] [71]
+Underfull \hbox (badness 10000) in paragraph at lines 2829--2830
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+) [72]
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+)
+Underfull \hbox (badness 10000) in paragraph at lines 2900--2901
+
+ []
+
+<setup_scripting.png, id=2828, 644.4075pt x 191.71625pt>
+File: setup_scripting.png Graphic file (type png)
+
+<use setup_scripting.png>
+Package pdftex.def Info: setup_scripting.png used on input line 2905.
+(pdftex.def)             Requested size: 481.80176pt x 143.3451pt.
+ [73 </home/john/linux_16/final_guide/setup_scripting.png>] [74]
+Underfull \hbox (badness 10000) in paragraph at lines 2974--2975
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2985--2986
+
+ []
+
+<curl.jpg, id=2883, 479.42493pt x 178.13028pt>
+File: curl.jpg Graphic file (type jpg)
+ <use curl.jpg>
+Package pdftex.def Info: curl.jpg used on input line 2989.
+(pdftex.def)             Requested size: 200.75073pt x 74.5886pt.
+ [75 </home/john/linux_16/final_guide/curl.jpg>] [76]
+<hats.jpg, id=2957, 552.0625pt x 158.5925pt>
+File: hats.jpg Graphic file (type jpg)
+ <use hats.jpg>
+Package pdftex.def Info: hats.jpg used on input line 3064.
+(pdftex.def)             Requested size: 401.50146pt x 115.34563pt.
+ [77 </home/john/linux_16/final_guide/hats.jpg>] <C.png, id=2978, 334.24875pt x
+ 355.3275pt>
+File: C.png Graphic file (type png)
+
+<use C.png>
+Package pdftex.def Info: C.png used on input line 3108.
+(pdftex.def)             Requested size: 150.56305pt x 160.06396pt.
+ [78 </home/john/linux_16/final_guide/C.png>]
+<tarball.png, id=2988, 301.125pt x 301.125pt>
+File: tarball.png Graphic file (type png)
+ <use tarball.png>
+Package pdftex.def Info: tarball.png used on input line 3121.
+(pdftex.def)             Requested size: 100.37537pt x 100.37321pt.
+
+<figlet.png, id=2989, 590.205pt x 114.4275pt>
+File: figlet.png Graphic file (type png)
+ <use figlet.png>
+Package pdftex.def Info: figlet.png used on input line 3130.
+(pdftex.def)             Requested size: 301.1261pt x 58.38168pt.
+
+<cowsay.png, id=2990, 152.2488pt x 54.4434pt>
+File: cowsay.png Graphic file (type png)
+ <use cowsay.png>
+Package pdftex.def Info: cowsay.png used on input line 3144.
+(pdftex.def)             Requested size: 301.1261pt x 107.70186pt.
+ [79 </home/john/linux_16/final_guide/tarball.png> </home/john/linux_16/final_g
+uide/figlet.png> </home/john/linux_16/final_guide/cowsay.png>]
+<mr_robot.png, id=3005, 602.25pt x 94.3525pt>
+File: mr_robot.png Graphic file (type png)
+ <use mr_robot.png>
+Package pdftex.def Info: mr_robot.png used on input line 3181.
+(pdftex.def)             Requested size: 351.31378pt x 55.0412pt.
+ [80 </home/john/linux_16/final_guide/mr_robot.png>]
+<allsafe.png, id=3023, 867.99281pt x 702.37407pt>
+File: allsafe.png Graphic file (type png)
+ <use allsafe.png>
+Package pdftex.def Info: allsafe.png used on input line 3195.
+(pdftex.def)             Requested size: 471.76422pt x 381.75206pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3200--3201
+
+ []
+
+<products.png, id=3024, 892.08281pt x 383.93437pt>
+File: products.png Graphic file (type png)
+ <use products.png>
+Package pdftex.def Info: products.png used on input line 3204.
+(pdftex.def)             Requested size: 471.76422pt x 203.039pt.
+ [81 </home/john/linux_16/final_guide/allsafe.png> </home/john/linux_16/final_g
+uide/products.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3216--3217
+
+ []
+
+<elliot.png, id=3033, 289.08pt x 422.32782pt>
+File: elliot.png Graphic file (type png)
+ <use elliot.png>
+Package pdftex.def Info: elliot.png used on input line 3220.
+(pdftex.def)             Requested size: 289.07928pt x 422.32678pt.
+ [82 </home/john/linux_16/final_guide/elliot.png>]
+<elliot_home_directory.png, id=3043, 551.81157pt x 54.2025pt>
+File: elliot_home_directory.png Graphic file (type png)
+
+<use elliot_home_directory.png>
+Package pdftex.def Info: elliot_home_directory.png used on input line 3242.
+(pdftex.def)             Requested size: 401.50146pt x 39.44012pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3246--3247
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 3256--3257
+
+ []
+
+<elliot_note.png, id=3044, 474.27188pt x 153.57375pt>
+File: elliot_note.png Graphic file (type png)
+ <use elliot_note.png>
+Package pdftex.def Info: elliot_note.png used on input line 3260.
+(pdftex.def)             Requested size: 401.50146pt x 130.01338pt.
+
+[83 </home/john/linux_16/final_guide/elliot_home_directory.png> </home/john/lin
+ux_16/final_guide/elliot_note.png>] [84]
+<angela_password.png, id=3104, 433.62pt x 171.64125pt>
+File: angela_password.png Graphic file (type png)
+
+<use angela_password.png>
+Package pdftex.def Info: angela_password.png used on input line 3320.
+(pdftex.def)             Requested size: 401.50146pt x 158.93588pt.
+ <angela.png, id=3105, 256.70906pt x 385.44pt>
+File: angela.png Graphic file (type png)
+
+<use angela.png>
+Package pdftex.def Info: angela.png used on input line 3330.
+(pdftex.def)             Requested size: 230.86334pt x 346.6399pt.
+ [85 </home/john/linux_16/final_guide/angela_password.png> </home/john/linux_16
+/final_guide/angela.png>]
+<angela_robot.png, id=3115, 517.935pt x 84.315pt>
+File: angela_robot.png Graphic file (type png)
+ <use angela_robot.png>
+Package pdftex.def Info: angela_robot.png used on input line 3340.
+(pdftex.def)             Requested size: 401.50146pt x 65.36401pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3345--3346
+
+ []
+
+<cron.png, id=3116, 536.75531pt x 82.80937pt>
+File: cron.png Graphic file (type png)
+ <use cron.png>
+Package pdftex.def Info: cron.png used on input line 3349.
+(pdftex.def)             Requested size: 401.50146pt x 61.9426pt.
+
+<gideon_password.png, id=3117, 436.63126pt x 70.76437pt>
+File: gideon_password.png Graphic file (type png)
+
+<use gideon_password.png>
+Package pdftex.def Info: gideon_password.png used on input line 3359.
+(pdftex.def)             Requested size: 401.50146pt x 65.07161pt.
+ <allsafe_image.jpg, id=3118, 240.9pt x 164.41425pt>
+File: allsafe_image.jpg Graphic file (type jpg)
+
+<use allsafe_image.jpg>
+Package pdftex.def Info: allsafe_image.jpg used on input line 3368.
+(pdftex.def)             Requested size: 301.1261pt x 205.53735pt.
+ [86 </home/john/linux_16/final_guide/angela_robot.png> </home/john/linux_16/fi
+nal_guide/cron.png> </home/john/linux_16/final_guide/gideon_password.png> </hom
+e/john/linux_16/final_guide/allsafe_image.jpg>]
+<got_gideon.png, id=3131, 391.4625pt x 94.85437pt>
+File: got_gideon.png Graphic file (type png)
+ <use got_gideon.png>
+Package pdftex.def Info: got_gideon.png used on input line 3398.
+(pdftex.def)             Requested size: 301.1261pt x 72.9686pt.
+
+<gideon.png, id=3132, 283.81032pt x 377.15906pt>
+File: gideon.png Graphic file (type png)
+ <use gideon.png>
+Package pdftex.def Info: gideon.png used on input line 3404.
+(pdftex.def)             Requested size: 200.75073pt x 266.7892pt.
+ [87 </home/john/linux_16/final_guide/got_gideon.png> </home/john/linux_16/fina
+l_guide/gideon.png>] [88] <mysql.png, id=3169, 1284.8pt x 664.4825pt>
+File: mysql.png Graphic file (type png)
+ <use mysql.png>
+Package pdftex.def Info: mysql.png used on input line 3456.
+(pdftex.def)             Requested size: 301.1261pt x 155.7377pt.
+
+<sqlmap.png, id=3170, 606.265pt x 180.675pt>
+File: sqlmap.png Graphic file (type png)
+ <use sqlmap.png>
+Package pdftex.def Info: sqlmap.png used on input line 3469.
+(pdftex.def)             Requested size: 301.1261pt x 89.73903pt.
+ [89 </home/john/linux_16/final_guide/mysql.png>]
+<acuart.png, id=3184, 611.28375pt x 281.55188pt>
+File: acuart.png Graphic file (type png)
+ <use acuart.png>
+Package pdftex.def Info: acuart.png used on input line 3480.
+(pdftex.def)             Requested size: 401.50146pt x 184.92691pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3484--3485
+
+ []
+
+[90 </home/john/linux_16/final_guide/sqlmap.png> </home/john/linux_16/final_gui
+de/acuart.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 3532--3533
+
+ []
+
+<distros.png, id=3208, 336.25626pt x 250.9375pt>
+File: distros.png Graphic file (type png)
+ <use distros.png>
+Package pdftex.def Info: distros.png used on input line 3536.
+(pdftex.def)             Requested size: 180.67566pt x 134.83415pt.
+ [91 </home/john/linux_16/final_guide/distros.png>]
+Underfull \hbox (badness 10000) detected at line 3569
+\OT1/cmtt/m/n/10.95 /bin /binaries /programs 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 3572
+\OT1/cmtt/m/n/10.95 /tmp /temp /temporary 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 3575
+\OT1/cmtt/m/n/10.95 .script .linux .sh 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 3579
+\OT1/cmtt/m/n/10.95 %:shell[]script #!/bin/bash $/bin/bash 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 3582
+\OT1/cmtt/m/n/10.95 run validate[]linux ./validate[]linux .$validate[]linux 
+ []
+
+
+Overfull \hbox (16.26807pt too wide) in paragraph at lines 3581--3583
+[]\OT1/cmr/m/n/10.95 What is the proper syn-tax for in-vok-ing a pro-gram or sc
+ript with the file-name \OT1/cmtt/m/n/10.95 validate[]linux
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 3588
+\OT1/cmtt/m/n/10.95 sqlmap nikto the[]harvester.py 
+ []
+
+[92] [93] <hacker.png, id=3251, 501.875pt x 501.875pt>
+File: hacker.png Graphic file (type png)
+ <use hacker.png>
+Package pdftex.def Info: hacker.png used on input line 3623.
+(pdftex.def)             Requested size: 100.37537pt x 100.37321pt.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3627.
+
+[94 </home/john/linux_16/final_guide/hacker.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3627.
+
+(/home/john/linux_16/final_guide/linux_guide.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3627.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3627.
+
 Package rerunfilecheck Info: File `linux_guide.out' has not changed.
-(rerunfilecheck)             Checksum: 8B99C45B05CB183BD2A0E8D43CF30B85;2708.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 271.
+(rerunfilecheck)             Checksum: C83C8B250B5055B04FA28D02F8A147FD;8023.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3627.
  ) 
 Here is how much of TeX's memory you used:
- 6927 strings out of 494953
- 98222 string characters out of 6180977
- 196388 words of memory out of 5000000
- 10064 multiletter control sequences out of 15000+600000
- 10530 words of font info for 38 fonts, out of 8000000 for 9000
+ 13358 strings out of 494953
+ 184445 string characters out of 6180977
+ 396123 words of memory out of 5000000
+ 14089 multiletter control sequences out of 15000+600000
+ 11242 words of font info for 40 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 29i,6n,32p,557b,423s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 33i,12n,60p,709b,1876s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /home/john/linux_16/final_guide/linux_guide.pdf (9 pages, 617
-928 bytes).
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmtt10.pfb>
+Output written on /home/john/linux_16/final_guide/linux_guide.pdf (98 pages, 35
+10754 bytes).
 PDF statistics:
- 316 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 333 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3792 PDF objects out of 4296 (max. 8388607)
+ 3564 compressed objects within 36 object streams
+ 2385 named destinations out of 2487 (max. 500000)
+ 1124 words of extra memory for PDF output out of 10000 (max. 10000000)
 
