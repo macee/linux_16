@@ -13,12 +13,9 @@ from hashlib import sha1
 
 from uuid import uuid4
 
-import flag_server
-
 from passlib.hash import sha256_crypt
 from contextlib import closing
 
-flag_rotation_seconds = 60
 correct_answers = {}
 
 debug = True
@@ -81,7 +78,6 @@ static_flags = { commit_hash : 1 for commit_hash in commit_hashes }
 
 program_names_handle = open("program_names.txt")
 program_names = [ "./" + p for p in program_names_handle.read().split('\n') ];
-# previous_minute = current_minute = strftime('%I:%M%p')
 
 def flag_rotator( services ):
 	global correct_answers, previous_minute
@@ -90,7 +86,6 @@ def flag_rotator( services ):
 	correct_answers = static_flags
 
 	for program in program_names:
-	# for service in services:
 
 		flag_base = program + strftime('%I:%M%p')
 		sha_hasher = sha1()
@@ -101,19 +96,17 @@ def flag_rotator( services ):
 
 	if ( current_second != 0 ):
 		seconds_to_wait = 60 - current_second
-		print "waiting ", seconds_to_wait
+		warning("waiting ", seconds_to_wait)
 		sleep(seconds_to_wait)
-		print "done waiting"
+		warning("done waiting")
 
 	round = 0
 	while 1:
 
 		print "FLAG ROUND", round, "="*50
-		# correct_answers = {}
 		correct_answers = static_flags
 
 		for program in program_names:
-		# for service in services:
 
 			flag_base = program + strftime('%I:%M%p')
 			sha_hasher = sha1()
@@ -123,7 +116,6 @@ def flag_rotator( services ):
 			correct_answers[ flag ] = 10 # the flag is worth 10 points
 
 		round += 1
-
 		sleep( 60 )
 
 
@@ -376,5 +368,5 @@ def session_logout():
  
 if ( __name__ == "__main__" ):
 	context = (CERTIFICATE, PRIVATE_KEY)
-	# app.run( host="0.0.0.0", debug=True, ssl_context=context, port = 444, threaded=True )
-	app.run( host="0.0.0.0", debug=True, port = 444, threaded=True )
+	app.run( host="0.0.0.0", debug=False, ssl_context=context, port = 2000, threaded=True )
+	# app.run( host="0.0.0.0", debug=False, port = 2000, threaded=True )
