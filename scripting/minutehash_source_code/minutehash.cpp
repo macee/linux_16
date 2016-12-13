@@ -28,8 +28,6 @@ int main( int argc, char *argv[] ){
 	// This adds on to the filename the current minute...
 	strcat(argv[0], buffer);
 
-	// cout << "sha1('" << argv[0] << "'): " << sha1( argv[0] ) << endl;
-
 	cout << sha1(argv[0]) << endl;
 
     return 0;
