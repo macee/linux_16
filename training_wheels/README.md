@@ -2,7 +2,7 @@ The "Training Wheels" Shell
 ========================
 
 <p align="center">
-  <img src="https://github.com/macee/linux_16/blob/master/pictures/scavenger_hunt.png?raw=true" alt="The bash shell"/>
+  <img src="https://github.com/macee/linux_16/blob/master/pictures/training_wheels.png?raw=true" alt="The bash shell"/>
 </p>
 
 To help you become a bit more acquainted with the [Linux][Linux] [command-line], the [`bash`][bash] shell, a _prototype_ idea is to let you interact with a "training wheels" shell, which tries to kind of hold your hand and guide you through running commands and learning different concepts in [Linux].
